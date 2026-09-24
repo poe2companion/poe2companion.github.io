@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PoE2 Companion — Radar, Automation & Build Overlays for Path of Exile 2</title>
+  <meta name="description" content="In-game companion tool for Path of Exile 2. Map radar, campaign pathfinding, auto-flasks, auto-crafting, and PoB passive tree overlay.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="site-nav">
+    <div class="container">
+      <div class="nav-brand">
+        <span class="nav-poe-emblem">◈</span>
+        <span class="nav-brand-text">PoE2 COMPANION</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#automation" class="nav-link" data-i18n="navAutomation">Automation</a>
+        <a href="#overlays" class="nav-link" data-i18n="navOverlays">Overlays</a>
+        <a href="#setup" class="nav-link" data-i18n="navHowItWorks">Setup</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Language Selector (Pre-rendered for instant visibility on file:///) -->
+        <div class="lang-selector-box">
+          <select id="lang-select" class="lang-select" aria-label="Select Language">
+            <option value="en" selected>🇺🇸 English</option>
+            <option value="vi">🇻🇳 Tiếng Việt</option>
+            <option value="zh">🇨🇳 简体中文</option>
+            <option value="ko">🇰🇷 한국어</option>
+            <option value="ru">🇷🇺 Русский</option>
+          </select>
+          <span class="lang-arrow">▼</span>
+        </div>
+
+        <!-- Compact Download Link -->
+        <a href="https://poe2.zonelyg.com/PoE2%20Companion_0.1.2_x64-setup.exe" class="btn-nav-download app-download-link">
+          <span data-i18n="navDownload">Download</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container">
+      <div class="hero-logo-box">
+        <img src="public/images/logo.png" alt="Path of Exile 2" class="hero-main-logo">
+      </div>
+
+      <h1 class="hero-title" data-i18n="heroTitle">
+        Your In-Game Companion for Path of Exile 2
+      </h1>
+
+      <p class="hero-subtitle" data-i18n="heroSubtitle">
+        Real-time map radar, campaign pathfinding, auto-flasks, auto-crafting, and PoB passive tree overlay.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="https://poe2.zonelyg.com/PoE2%20Companion_0.1.2_x64-setup.exe" class="btn-primary-lg app-download-link" id="hero-download">
+          <span data-i18n="heroDownloadBtn">Download for Windows</span>
+          <span class="btn-version-pill app-version-badge">v0.1.2</span>
+        </a>
+
+        <a href="#automation" class="btn-secondary-lg">
+          <span data-i18n="heroViewFeatures">Explore Features</span>
+        </a>
+      </div>
+
+      <p class="hero-meta" data-i18n="heroPlatform">
+        Free · For Windows 10 / 11 · Auto-updates via Cloudflare
+      </p>
+
+      <!-- Hero Visual Showcase -->
+      <div class="hero-preview-wrapper">
+        <div class="hero-preview-frame">
+          <img src="public/images/hero-preview.png" alt="PoE2 Companion In-Game Interface" class="hero-preview-img">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Automation Spotlight Section -->
+  <section class="automation-section" id="automation">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="autoSectionBadge">HANDS-FREE UTILITIES</span>
+        <h2 class="section-title" data-i18n="autoSectionTitle">Automation Tools</h2>
+        <p class="section-subtitle" data-i18n="autoSectionSubtitle">
+          Save your hands from wrist pain and avoid dying to missed flask timings.
+        </p>
+      </div>
+
+      <div class="automation-grid">
+        <!-- 1. Auto-Flask -->
+        <article class="panel-card">
+          <div class="card-header">
+            <h3 class="card-title" data-i18n="flaskTitle">Auto-Flask</h3>
+          </div>
+
+          <div class="card-preview-slot">
+            <img src="public/images/feature-automation.png" alt="Auto Flask Settings" class="card-preview-img">
+            <div class="preview-mockup">
+              <div class="mockup-row">
+                <span class="mockup-label">Auto Life Flask</span>
+                <span class="mockup-val">HP &lt; 45%</span>
+              </div>
+              <div class="mockup-row">
+                <span class="mockup-label">Auto Ward Flask</span>
+                <span class="mockup-val">Break &gt; 0ms</span>
+              </div>
+              <div class="mockup-row">
+                <span class="mockup-label">Auto Mana Flask</span>
+                <span class="mockup-val">Mana &lt; 35%</span>
+              </div>
+              <div class="mockup-row">
+                <span class="mockup-label">Human Timing Jitter</span>
+                <span class="mockup-badge-active">ACTIVE (±35ms)</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="card-desc" data-i18n="flaskDesc">
+            Drinks Life, Ward, or Mana flasks automatically when your HP or mana drops below your chosen threshold. Includes human-like delays so it never feels robotic.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-badge" data-i18n="flaskTag1">Life & Ward</span>
+            <span class="tag-badge" data-i18n="flaskTag2">Mana Trigger</span>
+            <span class="tag-badge" data-i18n="flaskTag3">Human Timing Delays</span>
+          </div>
+        </article>
+
+        <!-- 2. Auto-Crafting Engine -->
+        <article class="panel-card">
+          <div class="card-header">
+            <h3 class="card-title" data-i18n="craftTitle">Auto-Crafting Engine</h3>
+          </div>
+
+          <div class="card-preview-slot">
+            <img src="public/images/feature-automation.png" alt="Auto Crafting Interface" class="card-preview-img">
+            <div class="preview-mockup">
+              <div class="mockup-row">
+                <span class="mockup-label">Target 1</span>
+                <span class="mockup-val">+Maximum Life (T1/T2)</span>
+              </div>
+              <div class="mockup-row">
+                <span class="mockup-label">Target 2</span>
+                <span class="mockup-val">+Fire Resistance (T1/T2)</span>
+              </div>
+              <div class="mockup-row">
+                <span class="mockup-label">Budget Limit</span>
+                <span class="mockup-val">50 Alterations</span>
+              </div>
+              <div class="mockup-row">
+                <span class="mockup-label">Valuable Mod Warning</span>
+                <span class="mockup-badge-active">PROTECTED (3x T1)</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="card-desc" data-i18n="craftDesc">
+            Pick the mods you want, set a currency budget, and hit roll. Automatically stops on high-tier rolls so you never accidentally roll over something valuable.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-badge" data-i18n="craftTag1">Target Mod Selection</span>
+            <span class="tag-badge" data-i18n="craftTag2">Valuable Roll Protection</span>
+            <span class="tag-badge" data-i18n="craftTag3">Budget Cap Limits</span>
+          </div>
+        </article>
+
+        <!-- 3. Auto-Sort & Stash Packing -->
+        <article class="panel-card">
+          <div class="card-header">
+            <h3 class="card-title" data-i18n="sortTitle">Auto-Sort & Stash Packing</h3>
+          </div>
+
+          <div class="card-preview-slot">
+            <img src="public/images/feature-inventory.png" alt="Auto Sort Grid" class="card-preview-img">
+            <div class="preview-mockup">
+              <div class="mockup-row">
+                <span class="mockup-label">Sort Priority 1</span>
+                <span class="mockup-val">Currency &amp; Shards</span>
+              </div>
+              <div class="mockup-row">
+                <span class="mockup-label">Sort Priority 2</span>
+                <span class="mockup-val">Waystones &amp; Tablets</span>
+              </div>
+              <div class="mockup-row">
+                <span class="mockup-label">Sort Priority 3</span>
+                <span class="mockup-val">Gems &amp; Equipment</span>
+              </div>
+              <div class="mockup-row">
+                <span class="mockup-label">Auto-Packing</span>
+                <span class="mockup-badge-active">HOLE-FILLING READY</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="card-desc" data-i18n="sortDesc">
+            One click organizes your bags and stash tabs. Automatically fills empty slots based on your item category preferences without tedious dragging.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-badge" data-i18n="sortTag1">1-Click Clean Bags</span>
+            <span class="tag-badge" data-i18n="sortTag2">Custom Priority Order</span>
+            <span class="tag-badge" data-i18n="sortTag3">Stash Tab Packing</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Game Overlays Section -->
+  <section class="overlays-section" id="overlays">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="overlaySectionBadge">GAME OVERLAYS</span>
+        <h2 class="section-title" data-i18n="overlaySectionTitle">In-Game Overlays</h2>
+        <p class="section-subtitle" data-i18n="overlaySectionSubtitle">
+          Clean overlays that give you what you need without getting in the way.
+        </p>
+      </div>
+
+      <div class="overlays-grid">
+        <!-- Radar -->
+        <article class="overlay-feature-card">
+          <div class="card-preview-slot overlay-preview-slot">
+            <img src="public/images/feature-radar.png" alt="Map & Minimap Radar" class="card-preview-img">
+          </div>
+          <h3 class="overlay-card-title" data-i18n="radarTitle">Map & Minimap Radar</h3>
+          <p class="overlay-card-desc" data-i18n="radarDesc">
+            See bosses, rare monsters, chests, and shrines through the fog of war, with direct pathfinding lines to your next quest or exit.
+          </p>
+        </article>
+
+        <!-- Campaign -->
+        <article class="overlay-feature-card">
+          <div class="card-preview-slot overlay-preview-slot">
+            <img src="public/images/feature-leveling.png" alt="Campaign Route Guide" class="card-preview-img">
+          </div>
+          <h3 class="overlay-card-title" data-i18n="campaignTitle">Campaign Route Guide</h3>
+          <p class="overlay-card-desc" data-i18n="campaignDesc">
+            Auto-detects your current zone and quest objectives. Shows the quickest route through the story acts so you never get lost.
+          </p>
+        </article>
+
+        <!-- Tree -->
+        <article class="overlay-feature-card">
+          <div class="card-preview-slot overlay-preview-slot">
+            <img src="public/images/feature-builds.png" alt="PoB Build & Tree HUD" class="card-preview-img">
+          </div>
+          <h3 class="overlay-card-title" data-i18n="treeTitle">PoB Build & Tree HUD</h3>
+          <p class="overlay-card-desc" data-i18n="treeDesc">
+            Import your build share code from Path of Building. Overlays your planned passive tree directly over the game so you know what node to pick next.
+          </p>
+        </article>
+
+        <!-- Loot -->
+        <article class="overlay-feature-card">
+          <div class="card-preview-slot overlay-preview-slot">
+            <img src="public/images/feature-loot.png" alt="Loot & Net Worth Tracker" class="card-preview-img">
+          </div>
+          <h3 class="overlay-card-title" data-i18n="lootTitle">Loot & Net Worth Tracker</h3>
+          <p class="overlay-card-desc" data-i18n="lootDesc">
+            Tracks valuable drops and calculates your hourly currency rate in real time while you farm.
+          </p>
+        </article>
+
+        <!-- Inventory / Waystones -->
+        <article class="overlay-feature-card">
+          <div class="card-preview-slot overlay-preview-slot">
+            <img src="public/images/feature-inventory.png" alt="Waystone Mod Checker" class="card-preview-img">
+          </div>
+          <h3 class="overlay-card-title" data-i18n="waystoneTitle">Waystone Mod Checker</h3>
+          <p class="overlay-card-desc" data-i18n="waystoneDesc">
+            Warns you about dangerous map modifiers before you open the portal, saving you from reflect, no-regen, or bricked maps.
+          </p>
+        </article>
+
+        <!-- Trade -->
+        <article class="overlay-feature-card">
+          <div class="card-preview-slot overlay-preview-slot">
+            <img src="public/images/feature-trade.png" alt="Trade Whisper Helper" class="card-preview-img">
+          </div>
+          <h3 class="overlay-card-title" data-i18n="tradeTitle">Trade Whisper Helper</h3>
+          <p class="overlay-card-desc" data-i18n="tradeDesc">
+            Shows trade whisper alerts on your screen with 1-click buttons to invite, trade, or reply without typing commands into chat.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Setup Section -->
+  <section class="how-section" id="setup">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="howSectionBadge">QUICK START</span>
+        <h2 class="section-title" data-i18n="howSectionTitle">Up and Running in 3 Steps</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3 class="step-title" data-i18n="howStep1Title">1. Download & Install</h3>
+          <p class="step-desc" data-i18n="howStep1Desc">Download and run the installer from the button above.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3 class="step-title" data-i18n="howStep2Title">2. Start Path of Exile 2</h3>
+          <p class="step-desc" data-i18n="howStep2Desc">Launch Path of Exile 2 and load into your character.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3 class="step-title" data-i18n="howStep3Title">3. Launch Companion</h3>
+          <p class="step-desc" data-i18n="howStep3Desc">Open PoE2 Companion. Overlays and radar connect automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="cta-title" data-i18n="ctaTitle">Ready to Level Up Your PoE2 Journey?</h2>
+      <p class="cta-subtitle" data-i18n="ctaSubtitle">Lightweight, safe, and built specifically for Path of Exile 2 players.</p>
+      
+      <a href="https://poe2.zonelyg.com/PoE2%20Companion_0.1.2_x64-setup.exe" class="btn-primary-lg app-download-link" id="cta-download">
+        <span data-i18n="ctaDownloadBtn">Download PoE2 Companion</span>
+        <span class="btn-version-pill app-version-badge">v0.1.2</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-disclaimer" data-i18n="footerDisclaimer">
+        Path of Exile 2 is a registered trademark of Grinding Gear Games. PoE2 Companion is an independent third-party tool and is not affiliated with or endorsed by Grinding Gear Games.
+      </p>
+
+      <div class="footer-meta">
+        <span>PoE2 Companion <strong class="app-version-badge">v0.1.2</strong></span>
+        <span>•</span>
+        <span data-i18n="footerPlatform">Windows 64-bit</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Single Standard Script (Zero CORS issues on file:///) -->
+  <script src="js/app.js"></script>
+</body>
+</html>

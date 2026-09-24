@@ -1,0 +1,778 @@
+/* ==========================================================================
+   PoE2 Companion — Public Website Styles
+   Faithful to Path of Exile 2 Dark Gothic Design System (docs/DESIGN_SYSTEM.md)
+   Strict 2px border radius, aged bronze, warm parchment, and stone surfaces.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Surface & Background */
+  --poe2-bg-deep: #0a0807;
+  --poe2-bg-surface: #12100e;
+  --poe2-bg-card: #15110d;
+  --poe2-bg-card-hover: #1c1611;
+  --poe2-bg-input: #0d0a08;
+  --poe2-bg-elevated: #1a1510;
+
+  /* Borders & Highlights */
+  --poe2-border-strong: #5a4428;
+  --poe2-border-highlight: #8e6f42;
+  --poe2-border-groove: #2e2318;
+  --poe2-border-subtle: #3d2f1f;
+  --poe2-border-accent: #c9a961;
+
+  /* Gold Palette */
+  --poe2-gold-primary: #c9a961;
+  --poe2-gold-bright: #ffd54f;
+  --poe2-gold-secondary: #8c734b;
+  --poe2-gold-glow: rgba(201, 169, 97, 0.25);
+
+  /* Text Colors */
+  --poe2-text-bright: #ede2cd;
+  --poe2-text-muted: #8c8273;
+  --poe2-text-subtle: #5a5347;
+
+  /* Status Colors */
+  --poe2-cyan-telemetry: #2ed8ff;
+  --poe2-green-active: #44dd88;
+  --poe2-red-danger: #ef5350;
+
+  /* Strict Geometry */
+  --poe2-radius: 2px;
+
+  /* Fonts */
+  --poe2-font-title: 'Cinzel', serif;
+  --poe2-font-ui: 'Outfit', sans-serif;
+  --poe2-font-mono: 'JetBrains Mono', monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--poe2-bg-deep);
+  color: var(--poe2-text-bright);
+  font-family: var(--poe2-font-ui);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(201, 169, 97, 0.08), transparent 70%),
+    radial-gradient(circle at 10% 30%, rgba(90, 68, 40, 0.05) 0%, transparent 40%),
+    linear-gradient(180deg, var(--poe2-bg-deep) 0%, #0d0a08 50%, var(--poe2-bg-deep) 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--poe2-bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--poe2-border-strong);
+  border-radius: var(--poe2-radius);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--poe2-gold-secondary);
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, .font-title {
+  font-family: var(--poe2-font-title);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.6;
+  color: var(--poe2-text-muted);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section Header standard */
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-badge {
+  display: inline-block;
+  font-family: var(--poe2-font-title);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--poe2-gold-primary);
+  background: rgba(201, 169, 97, 0.08);
+  border: 1px solid var(--poe2-border-strong);
+  border-radius: var(--poe2-radius);
+  padding: 4px 12px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--poe2-text-bright);
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--poe2-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Navigation Bar
+   ========================================================================== */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10, 8, 7, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--poe2-border-groove);
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-poe-emblem {
+  color: var(--poe2-gold-bright);
+  font-size: 1.35rem;
+  line-height: 1;
+  text-shadow: 0 0 10px rgba(255, 213, 79, 0.4);
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.nav-brand:hover .nav-poe-emblem {
+  transform: scale(1.2);
+}
+
+.nav-brand-text {
+  font-family: var(--poe2-font-title);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--poe2-gold-primary);
+  letter-spacing: 0.08em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-link {
+  font-family: var(--poe2-font-title);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--poe2-text-muted);
+  transition: color 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--poe2-gold-bright);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Language Selector Dropdown */
+.lang-selector-box {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-select {
+  appearance: none;
+  background: linear-gradient(180deg, #1f1812 0%, #120e0b 100%);
+  border: 1px solid var(--poe2-border-strong);
+  border-top: 1px solid var(--poe2-border-highlight);
+  border-radius: var(--poe2-radius);
+  color: var(--poe2-gold-primary);
+  font-family: var(--poe2-font-ui);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 28px 5px 10px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.15s ease;
+}
+
+.lang-select:hover, .lang-select:focus {
+  border-color: var(--poe2-gold-primary);
+  color: var(--poe2-gold-bright);
+  outline: none;
+}
+
+.lang-arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 0.65rem;
+  color: var(--poe2-gold-primary);
+}
+
+/* Compact Nav Button */
+.btn-nav-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(180deg, #2b2219 0%, #1a140e 100%);
+  border: 1px solid var(--poe2-border-strong);
+  border-top: 1px solid var(--poe2-border-highlight);
+  border-radius: var(--poe2-radius);
+  color: var(--poe2-gold-primary);
+  font-family: var(--poe2-font-title);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 6px 14px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.6);
+  transition: all 0.15s ease;
+}
+
+.btn-nav-download:hover {
+  background: linear-gradient(180deg, #382c20 0%, #221a12 100%);
+  border-color: var(--poe2-gold-primary);
+  color: var(--poe2-gold-bright);
+  box-shadow: 0 0 8px rgba(201, 169, 97, 0.35);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+  padding: 80px 0 60px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-logo-box {
+  margin-bottom: 24px;
+}
+
+.hero-main-logo {
+  max-width: 240px;
+  height: auto;
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.9));
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.hero-logo-box:hover .hero-main-logo {
+  transform: scale(1.03);
+  filter: drop-shadow(0 6px 18px rgba(201, 169, 97, 0.25));
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--poe2-text-bright);
+  max-width: 860px;
+  margin: 0 auto 18px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--poe2-text-muted);
+  max-width: 680px;
+  margin: 0 auto 36px;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Primary Large Download Button */
+.btn-primary-lg {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(180deg, #3a2d1f 0%, #1f1710 100%);
+  border: 1px solid var(--poe2-border-highlight);
+  border-top: 1px solid var(--poe2-gold-primary);
+  border-radius: var(--poe2-radius);
+  color: var(--poe2-gold-bright);
+  font-family: var(--poe2-font-title);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 14px 28px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6), 0 4px 16px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease;
+}
+
+.btn-primary-lg:hover {
+  background: linear-gradient(180deg, #4d3c2a 0%, #291f15 100%);
+  border-color: var(--poe2-gold-bright);
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(201, 169, 97, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.btn-version-pill {
+  font-family: var(--poe2-font-mono);
+  font-size: 0.72rem;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--poe2-border-strong);
+  border-radius: var(--poe2-radius);
+  padding: 2px 6px;
+  color: var(--poe2-gold-primary);
+}
+
+/* Secondary Button */
+.btn-secondary-lg {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(21, 17, 13, 0.8);
+  border: 1px solid var(--poe2-border-subtle);
+  border-radius: var(--poe2-radius);
+  color: var(--poe2-text-bright);
+  font-family: var(--poe2-font-title);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 14px 24px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-secondary-lg:hover {
+  background: rgba(30, 24, 18, 0.9);
+  border-color: var(--poe2-border-highlight);
+  color: var(--poe2-gold-primary);
+}
+
+.hero-meta {
+  font-size: 0.76rem;
+  color: var(--poe2-text-subtle);
+  font-family: var(--poe2-font-mono);
+  margin-bottom: 32px;
+}
+
+/* Hero Preview Showcase */
+.hero-preview-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 8px;
+  background: radial-gradient(circle at center, rgba(201, 169, 97, 0.08) 0%, transparent 70%);
+}
+
+.hero-preview-frame {
+  background: var(--poe2-bg-surface);
+  border: 1px solid var(--poe2-border-strong);
+  border-top: 1px solid var(--poe2-border-highlight);
+  border-radius: var(--poe2-radius);
+  box-shadow: inset 0 0 0 1px var(--poe2-border-groove), 0 8px 32px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-preview-slot {
+  aspect-ratio: 16 / 9;
+  margin-bottom: 14px;
+}
+
+
+
+/* ==========================================================================
+   Automation Section (Spotlight)
+   ========================================================================== */
+.automation-section {
+  padding: 80px 0;
+  border-top: 1px solid var(--poe2-border-groove);
+  background: radial-gradient(circle at 50% 30%, rgba(201, 169, 97, 0.03) 0%, transparent 60%);
+}
+
+.automation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Standard Gothic Card (.panel-card matching DESIGN_SYSTEM.md) */
+.panel-card {
+  background: var(--poe2-bg-surface);
+  border: 1px solid var(--poe2-border-strong);
+  border-top: 1px solid var(--poe2-border-highlight);
+  border-radius: var(--poe2-radius);
+  box-shadow: inset 0 0 0 1px var(--poe2-border-groove), 0 4px 14px rgba(0, 0, 0, 0.7);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+
+.panel-card:hover {
+  background: var(--poe2-bg-card-hover);
+  border-color: var(--poe2-gold-secondary);
+  border-top-color: var(--poe2-gold-primary);
+  box-shadow: inset 0 0 0 1px var(--poe2-border-strong), 0 6px 20px rgba(0, 0, 0, 0.85);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  border-bottom: 1px solid var(--poe2-border-subtle);
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-header-icon {
+  font-size: 1.25rem;
+  color: var(--poe2-gold-primary);
+}
+
+.card-title {
+  font-family: var(--poe2-font-title);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--poe2-gold-primary);
+  text-transform: uppercase;
+}
+
+.card-desc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--poe2-text-bright);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* Visual Preview Slot inside Card */
+.card-preview-slot {
+  margin-bottom: 20px;
+  border: 1px solid var(--poe2-border-subtle);
+  border-radius: var(--poe2-radius);
+  background: var(--poe2-bg-input);
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Fallback Mockup UI (renders when image is loading or placeholder) */
+.preview-mockup {
+  width: 100%;
+  height: 100%;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  background: radial-gradient(circle at center, #1b1612 0%, #0d0a08 100%);
+}
+
+.mockup-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--poe2-border-groove);
+  border-radius: var(--poe2-radius);
+  font-size: 0.75rem;
+}
+
+.mockup-label {
+  color: var(--poe2-text-muted);
+}
+
+.mockup-val {
+  font-family: var(--poe2-font-mono);
+  color: var(--poe2-gold-bright);
+  font-weight: 600;
+}
+
+.mockup-badge-active {
+  color: var(--poe2-green-active);
+  font-family: var(--poe2-font-mono);
+  font-size: 0.7rem;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.tag-badge {
+  font-family: var(--poe2-font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--poe2-gold-secondary);
+  background: rgba(140, 115, 75, 0.08);
+  border: 1px solid var(--poe2-border-subtle);
+  border-radius: var(--poe2-radius);
+  padding: 2px 8px;
+}
+
+/* ==========================================================================
+   In-Game Overlays Section
+   ========================================================================== */
+.overlays-section {
+  padding: 80px 0;
+  border-top: 1px solid var(--poe2-border-groove);
+}
+
+.overlays-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.overlay-feature-card {
+  background: var(--poe2-bg-surface);
+  border: 1px solid var(--poe2-border-strong);
+  border-top: 1px solid var(--poe2-border-highlight);
+  border-radius: var(--poe2-radius);
+  box-shadow: inset 0 0 0 1px var(--poe2-border-groove), 0 3px 10px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+
+.overlay-feature-card:hover {
+  background: var(--poe2-bg-card-hover);
+  border-color: var(--poe2-gold-secondary);
+  transform: translateY(-2px);
+}
+
+.overlay-card-icon {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.overlay-card-title {
+  font-family: var(--poe2-font-title);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--poe2-gold-primary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.overlay-card-desc {
+  font-size: 0.85rem;
+  color: var(--poe2-text-bright);
+  line-height: 1.5;
+}
+
+
+
+/* ==========================================================================
+   Quick Start / How It Works
+   ========================================================================== */
+.how-section {
+  padding: 80px 0;
+  border-top: 1px solid var(--poe2-border-groove);
+  background: radial-gradient(circle at 50% 50%, rgba(201, 169, 97, 0.02) 0%, transparent 60%);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.step-card {
+  background: var(--poe2-bg-surface);
+  border: 1px solid var(--poe2-border-strong);
+  border-top: 1px solid var(--poe2-border-highlight);
+  border-radius: var(--poe2-radius);
+  padding: 24px;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px var(--poe2-border-groove);
+}
+
+.step-num {
+  font-family: var(--poe2-font-mono);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--poe2-gold-primary);
+  margin-bottom: 12px;
+}
+
+.step-title {
+  font-family: var(--poe2-font-title);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--poe2-text-bright);
+  margin-bottom: 8px;
+}
+
+.step-desc {
+  font-size: 0.85rem;
+  color: var(--poe2-text-muted);
+}
+
+/* ==========================================================================
+   Bottom CTA Section
+   ========================================================================== */
+.cta-section {
+  padding: 80px 0;
+  border-top: 1px solid var(--poe2-border-groove);
+  text-align: center;
+  background: radial-gradient(ellipse at 50% 100%, rgba(201, 169, 97, 0.08) 0%, transparent 70%);
+}
+
+.cta-title {
+  font-size: 2.2rem;
+  color: var(--poe2-text-bright);
+  margin-bottom: 12px;
+}
+
+.cta-subtitle {
+  font-size: 1.05rem;
+  color: var(--poe2-text-muted);
+  margin-bottom: 32px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+  border-top: 1px solid var(--poe2-border-groove);
+  padding: 40px 0;
+  background: #090706;
+  font-size: 0.78rem;
+  color: var(--poe2-text-subtle);
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.footer-disclaimer {
+  max-width: 720px;
+  line-height: 1.6;
+  color: var(--poe2-text-subtle);
+}
+
+.footer-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--poe2-font-mono);
+  font-size: 0.72rem;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 992px) {
+  .automation-grid,
+  .overlays-grid,
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-nav .nav-links {
+    display: none;
+  }
+  .hero-title {
+    font-size: 1.85rem;
+  }
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  .automation-grid,
+  .overlays-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+}

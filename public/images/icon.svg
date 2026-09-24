@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Gold Gradient -->
+    <linearGradient id="poeGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff099"/>
+      <stop offset="20%" stop-color="#ffd54f"/>
+      <stop offset="60%" stop-color="#c9a961"/>
+      <stop offset="100%" stop-color="#8c734b"/>
+    </linearGradient>
+
+    <!-- Outer Glow -->
+    <filter id="goldGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#ffd54f" flood-opacity="0.5"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Centered Diamond Emblem ◈ -->
+  <g filter="url(#goldGlow)" fill="url(#poeGold)">
+    <!-- Outer Diamond Ring -->
+    <path d="M 256 32 L 480 256 L 256 480 L 32 256 Z 
+             M 256 128 L 128 256 L 256 384 L 384 256 Z" 
+          fill-rule="evenodd" />
+
+    <!-- Inner Solid Diamond Core -->
+    <polygon points="256,184 328,256 256,328 184,256"/>
+  </g>
+</svg>

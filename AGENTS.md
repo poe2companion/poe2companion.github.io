@@ -1,0 +1,1 @@
+The main project is at "D:\Tools\PoE2Companion", here is just the HTML, CSS, images file for the front end that I'll push to github
