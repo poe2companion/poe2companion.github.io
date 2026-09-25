@@ -16,14 +16,25 @@
     en: {
       navAutomation: 'Automation',
       navOverlays: 'Overlays',
+      navPricing: 'Plans',
       navHowItWorks: 'Setup',
       navDownload: 'Download',
 
       heroTitle: 'Your In-Game Companion for Path of Exile 2',
       heroSubtitle: 'Real-time map radar, campaign pathfinding, auto-flasks, auto-crafting, and PoB passive tree overlay.',
       heroDownloadBtn: 'Download for Windows',
-      heroPlatform: 'Free · For Windows 10 / 11 · Auto-updates via Cloudflare',
+      heroPlatform: 'Windows Only · Windows 10 / 11 · Auto-updates via Cloudflare',
       heroViewFeatures: 'Explore Features',
+
+      pricingSectionBadge: 'ACCESS PLANS',
+      pricingSectionTitle: 'Choose Your Access Plan',
+      pricingSectionSubtitle: 'Instant access to all overlays, radar, auto-crafting, and updates.',
+      pricingCommunityBadge: 'COMMUNITY PERKS',
+      pricingCommunityTitle: 'Free Weekends & Redeem Codes',
+      pricingCommunityDesc: 'The developer frequently hosts free weekend access and drops code giveaways in our Discord community!',
+      pricingCommunityBtn: 'JOIN DISCORD FOR NEWS!',
+      planPopularBadge: 'BEST VALUE',
+      planBuyBtn: 'Get Access',
 
       autoSectionBadge: 'HANDS-FREE UTILITIES',
       autoSectionTitle: 'Automation Tools',
@@ -89,14 +100,25 @@
     vi: {
       navAutomation: 'Tự động',
       navOverlays: 'Giao diện HUD',
+      navPricing: 'Bảng giá',
       navHowItWorks: 'Cài đặt',
       navDownload: 'Tải về',
 
       heroTitle: 'Công Cụ Hỗ Trợ Chơi Path of Exile 2 Tối Ưu',
       heroSubtitle: 'Radar bản đồ thời gian thực, dẫn đường làm nhiệm vụ, tự bấm bình máu/mana, tự craft đồ và hiển thị cây kỹ năng PoB trực tiếp trong game.',
       heroDownloadBtn: 'Tải về cho Windows',
-      heroPlatform: 'Miễn phí · Dành cho Windows 10 / 11 · Tự động cập nhật qua Cloudflare',
+      heroPlatform: 'Dành cho Windows · Windows 10 / 11 · Tự động cập nhật qua Cloudflare',
       heroViewFeatures: 'Xem tính năng',
+
+      pricingSectionBadge: 'GÓI TRUY CẬP',
+      pricingSectionTitle: 'Lựa Chọn Gói Phù Hợp',
+      pricingSectionSubtitle: 'Truy cập đầy đủ toàn bộ radar, tự bấm bình, tự craft đồ và cập nhật tự động.',
+      pricingCommunityBadge: 'ĐẶC QUYỀN CỘNG ĐỒNG',
+      pricingCommunityTitle: 'Cuối Tuần Miễn Phí & Mã Kích Hoạt',
+      pricingCommunityDesc: 'Nhà phát triển thường xuyên mở ngày chơi thử miễn phí và tặng mã kích hoạt quà tặng trong kênh Discord!',
+      pricingCommunityBtn: 'THAM GIA DISCORD CẬP NHẬT TIN TỨC!',
+      planPopularBadge: 'TIẾT KIỆM NHẤT',
+      planBuyBtn: 'Nhận Gói',
 
       autoSectionBadge: 'TIỆN ÍCH TỰ ĐỘNG',
       autoSectionTitle: 'Tính Năng Tự Động',
@@ -162,14 +184,25 @@
     zh: {
       navAutomation: '自动化',
       navOverlays: '游戏覆盖',
+      navPricing: '价格与计划',
       navHowItWorks: '使用指南',
       navDownload: '立即下载',
 
       heroTitle: '流亡黯道 2 全能游戏辅助工具',
       heroSubtitle: '实时小地图雷达、剧情跑图导航、自动喝药、自动洗装备以及 PoB 天赋树游戏内覆盖。',
       heroDownloadBtn: '下载 Windows 版',
-      heroPlatform: '免费 · 支持 Windows 10 / 11 · Cloudflare 高速自动更新',
+      heroPlatform: '仅限 Windows · 支持 Windows 10 / 11 · Cloudflare 高速自动更新',
       heroViewFeatures: '浏览功能',
+
+      pricingSectionBadge: '访问计划',
+      pricingSectionTitle: '选择适合你的计划',
+      pricingSectionSubtitle: '完整解锁全部小地图雷达、自动喝药、自动打造及自动更新。',
+      pricingCommunityBadge: '社区福利',
+      pricingCommunityTitle: '免费周末与礼包兑换码',
+      pricingCommunityDesc: '作者定期在官方 Discord 社区举办免费体验周末并派发时长兑换码！',
+      pricingCommunityBtn: '加入 DISCORD 获取最新动态！',
+      planPopularBadge: '超值推荐',
+      planBuyBtn: '获取使用权',
 
       autoSectionBadge: '解放双手',
       autoSectionTitle: '自动化辅助',
@@ -235,14 +268,25 @@
     ko: {
       navAutomation: '자동화',
       navOverlays: '게임 오버레이',
+      navPricing: '이용권 플랜',
       navHowItWorks: '설치 가이드',
       navDownload: '다운로드',
 
       heroTitle: '패스 오브 엑자일 2를 위한 최고의 동반자 도구',
       heroSubtitle: '실시간 미니맵 레이더, 캠페인 길찾기, 자동 물약, 자동 제작, 그리고 PoB 패시브 노드 오버레이까지 한 번에.',
       heroDownloadBtn: 'Windows용 다운로드',
-      heroPlatform: '무료 · Windows 10 / 11 지원 · Cloudflare 초고속 업데이트',
+      heroPlatform: 'Windows 전용 · Windows 10 / 11 지원 · Cloudflare 초고속 업데이트',
       heroViewFeatures: '기능 둘러보기',
+
+      pricingSectionBadge: '이용권 플랜',
+      pricingSectionTitle: '나에게 맞는 플랜 선택',
+      pricingSectionSubtitle: '모든 레이더 오버레이, 자동 물약, 자동 제작 및 최신 업데이트 지원.',
+      pricingCommunityBadge: '커뮤니티 혜택',
+      pricingCommunityTitle: '주말 무료 체험 & 리딤 코드',
+      pricingCommunityDesc: '개발자가 공식 Discord에서 주말 무료 이용 이벤트 및 이용권 리딤 코드를 수시로 배포합니다!',
+      pricingCommunityBtn: '최신 소식 확인하러 DISCORD 참여!',
+      planPopularBadge: '최고 가성비',
+      planBuyBtn: '이용권 구매',
 
       autoSectionBadge: '편의 자동화',
       autoSectionTitle: '자동화 기능',
@@ -308,14 +352,25 @@
     ru: {
       navAutomation: 'Автоматизация',
       navOverlays: 'Оверлеи',
+      navPricing: 'Тарифы',
       navHowItWorks: 'Установка',
       navDownload: 'Скачать',
 
       heroTitle: 'Ваш главный игровой помощник в Path of Exile 2',
       heroSubtitle: 'Радар карты в реальном времени, навигация по сюжету, авто-флаконы, авто-крафт и оверлей дерева пассивок из PoB.',
       heroDownloadBtn: 'Скачать для Windows',
-      heroPlatform: 'Бесплатно · Для Windows 10 / 11 · Автообновление через Cloudflare',
+      heroPlatform: 'Только для Windows · Windows 10 / 11 · Автообновление через Cloudflare',
       heroViewFeatures: 'Все функции',
+
+      pricingSectionBadge: 'ПЛАНЫ ДОСТУПА',
+      pricingSectionTitle: 'Выберите Тариф Доступа',
+      pricingSectionSubtitle: 'Полный доступ ко всем оверлеям, радару, авто-крафту и автоматическим обновлениям.',
+      pricingCommunityBadge: 'БОНУСЫ СООБЩЕСТВА',
+      pricingCommunityTitle: 'Бесплатные Выходные и Промокоды',
+      pricingCommunityDesc: 'Разработчик регулярно устраивает дни бесплатного доступа и раздает промокоды в Discord!',
+      pricingCommunityBtn: 'НАШ DISCORD С НОВОСТЯМИ!',
+      planPopularBadge: 'ВЫГОДНЫЙ ВЫБОР',
+      planBuyBtn: 'Получить Доступ',
 
       autoSectionBadge: 'АВТОМАТИЗАЦИЯ',
       autoSectionTitle: 'Инструменты Автоматизации',
@@ -426,9 +481,9 @@
 
   // Version Resolver from Cloudflare
   async function resolveLatestVersion() {
-    const MANIFEST_URL = 'https://poe2.zonelyg.com/latest.json';
-    const FALLBACK_VERSION = 'v0.1.2';
-    const FALLBACK_URL = 'https://poe2.zonelyg.com/PoE2%20Companion_0.1.2_x64-setup.exe';
+    const MANIFEST_URL = 'https://poe2update.zonelyg.com/latest.json';
+    const FALLBACK_VERSION = 'v0.1.6';
+    const FALLBACK_URL = 'https://poe2update.zonelyg.com/PoE2%20Companion_0.1.6_x64-setup.exe';
 
     let version = FALLBACK_VERSION;
     let downloadUrl = FALLBACK_URL;
@@ -456,6 +511,65 @@
     });
   }
 
+  // Dynamic Pricing Plans from zonelyg.com/api/poe2companion/buy-plan
+  async function fetchPricingPlans() {
+    const API_URL = 'https://zonelyg.com/api/poe2companion/buy-plan';
+    const grid = document.getElementById('pricing-grid');
+    if (!grid) return;
+
+    try {
+      const res = await fetch(API_URL);
+      if (!res.ok) return;
+      const data = await res.json();
+      if (!data.success || !Array.isArray(data.plans) || data.plans.length === 0) return;
+
+      const dict = translations[currentLocale] || translations.en;
+      const popularBadgeText = dict.planPopularBadge || 'BEST VALUE';
+      const buyBtnText = dict.planBuyBtn || 'Get Access';
+
+      grid.innerHTML = data.plans.map(plan => {
+        const isBest = plan.id === '30_days' || plan.durationDays === 30;
+        const discountBadge = plan.discountPercent > 0 
+          ? `<span class="plan-discount-badge">-${plan.discountPercent}%</span>` 
+          : '';
+        const popularTag = isBest 
+          ? `<div class="plan-best-badge">${popularBadgeText}</div>` 
+          : '';
+
+        return `
+          <div class="pricing-card ${isBest ? 'pricing-card-highlight' : ''}">
+            ${popularTag}
+            <div class="plan-header">
+              <div class="plan-title-row">
+                <h3 class="plan-name">${plan.name}</h3>
+                ${discountBadge}
+              </div>
+              <div class="plan-price-wrap">
+                <span class="plan-currency">$</span>
+                <span class="plan-price">${plan.priceUsdt}</span>
+                <span class="plan-crypto">USDT</span>
+              </div>
+            </div>
+
+            <ul class="plan-perks">
+              <li><span class="perk-check">✓</span> <span>Full Map &amp; Minimap Radar</span></li>
+              <li><span class="perk-check">✓</span> <span>Auto-Flask &amp; Auto-Craft</span></li>
+              <li><span class="perk-check">✓</span> <span>PoB Passive Tree Overlay</span></li>
+              <li><span class="perk-check">✓</span> <span>Automatic Cloudflare Updates</span></li>
+            </ul>
+
+            <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-plan-action">
+              <span>${buyBtnText}</span>
+              <span class="plan-btn-arrow">→</span>
+            </a>
+          </div>
+        `;
+      }).join('');
+    } catch (e) {
+      // Retain fallback HTML cards
+    }
+  }
+
   // Init DOM
   function init() {
     const select = document.getElementById('lang-select');
@@ -475,11 +589,13 @@
 
       select.addEventListener('change', e => {
         setLocale(e.target.value);
+        fetchPricingPlans();
       });
     }
 
     applyTranslations();
     resolveLatestVersion();
+    fetchPricingPlans();
 
     // Image fallback handling
     document.querySelectorAll('.card-preview-img').forEach(img => {

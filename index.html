@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PoE2 Companion — Radar, Automation & Build Overlays for Path of Exile 2</title>
-  <meta name="description" content="In-game companion tool for Path of Exile 2. Map radar, campaign pathfinding, auto-flasks, auto-crafting, and PoB passive tree overlay.">
+  <meta name="description"
+    content="In-game companion tool for Path of Exile 2. Map radar, campaign pathfinding, auto-flasks, auto-crafting, and PoB passive tree overlay.">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <!-- Navigation Bar -->
@@ -21,6 +24,7 @@
       <div class="nav-links">
         <a href="#overlays" class="nav-link" data-i18n="navOverlays">Overlays</a>
         <a href="#automation" class="nav-link" data-i18n="navAutomation">Automation</a>
+        <a href="#pricing" class="nav-link" data-i18n="navPricing">Plans</a>
         <a href="#setup" class="nav-link" data-i18n="navHowItWorks">Setup</a>
       </div>
 
@@ -37,8 +41,16 @@
           <span class="lang-arrow">▼</span>
         </div>
 
+        <!-- Discord Community Link -->
+        <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-nav-discord"
+          title="Join Discord Community">
+          <img src="public/images/discord.svg" alt="Discord" class="nav-discord-icon">
+          <span>Discord</span>
+        </a>
+
         <!-- Compact Download Link -->
-        <a href="https://poe2.zonelyg.com/PoE2%20Companion_0.1.2_x64-setup.exe" class="btn-nav-download app-download-link">
+        <a href="https://poe2update.zonelyg.com/PoE2%20Companion_0.1.6_x64-setup.exe"
+          class="btn-nav-download app-download-link">
           <span data-i18n="navDownload">Download</span>
         </a>
       </div>
@@ -61,9 +73,10 @@
       </p>
 
       <div class="hero-cta-group">
-        <a href="https://poe2.zonelyg.com/PoE2%20Companion_0.1.2_x64-setup.exe" class="btn-primary-lg app-download-link" id="hero-download">
+        <a href="https://poe2update.zonelyg.com/PoE2%20Companion_0.1.6_x64-setup.exe"
+          class="btn-primary-lg app-download-link" id="hero-download">
           <span data-i18n="heroDownloadBtn">Download for Windows</span>
-          <span class="btn-version-pill app-version-badge">v0.1.2</span>
+          <span class="btn-version-pill app-version-badge">v0.1.6</span>
         </a>
 
         <a href="#overlays" class="btn-secondary-lg">
@@ -72,7 +85,7 @@
       </div>
 
       <p class="hero-meta" data-i18n="heroPlatform">
-        Free · For Windows 10 / 11 · Auto-updates via Cloudflare
+        Windows Only · Windows 10 / 11 · Auto-updates via Cloudflare
       </p>
 
       <!-- Hero Visual Showcase -->
@@ -103,7 +116,8 @@
           </div>
           <h3 class="overlay-card-title" data-i18n="radarTitle">Map & Minimap Radar</h3>
           <p class="overlay-card-desc" data-i18n="radarDesc">
-            See bosses, rare monsters, chests, and shrines through the fog of war, with direct pathfinding lines to your next quest or exit.
+            See bosses, rare monsters, chests, and shrines through the fog of war, with direct pathfinding lines to your
+            next quest or exit.
           </p>
         </article>
 
@@ -114,7 +128,8 @@
           </div>
           <h3 class="overlay-card-title" data-i18n="campaignTitle">Campaign Route Guide</h3>
           <p class="overlay-card-desc" data-i18n="campaignDesc">
-            Auto-detects your current zone and quest objectives. Shows the quickest route through the story acts so you never get lost.
+            Auto-detects your current zone and quest objectives. Shows the quickest route through the story acts so you
+            never get lost.
           </p>
         </article>
 
@@ -125,7 +140,8 @@
           </div>
           <h3 class="overlay-card-title" data-i18n="treeTitle">PoB Build & Tree HUD</h3>
           <p class="overlay-card-desc" data-i18n="treeDesc">
-            Import your build share code from Path of Building. Overlays your planned passive tree directly over the game so you know what node to pick next.
+            Import your build share code from Path of Building. Overlays your planned passive tree directly over the
+            game so you know what node to pick next.
           </p>
         </article>
 
@@ -147,7 +163,8 @@
           </div>
           <h3 class="overlay-card-title" data-i18n="waystoneTitle">Waystone Mod Checker</h3>
           <p class="overlay-card-desc" data-i18n="waystoneDesc">
-            Warns you about dangerous map modifiers before you open the portal, saving you from reflect, no-regen, or bricked maps.
+            Warns you about dangerous map modifiers before you open the portal, saving you from reflect, no-regen, or
+            bricked maps.
           </p>
         </article>
 
@@ -158,7 +175,8 @@
           </div>
           <h3 class="overlay-card-title" data-i18n="tradeTitle">Trade Whisper Helper</h3>
           <p class="overlay-card-desc" data-i18n="tradeDesc">
-            Shows trade whisper alerts on your screen with 1-click buttons to invite, trade, or reply without typing commands into chat.
+            Shows trade whisper alerts on your screen with 1-click buttons to invite, trade, or reply without typing
+            commands into chat.
           </p>
         </article>
       </div>
@@ -206,7 +224,8 @@
           </div>
 
           <p class="card-desc" data-i18n="flaskDesc">
-            Drinks Life, Ward, or Mana flasks automatically when your HP or mana drops below your chosen threshold. Includes human-like delays so it never feels robotic.
+            Drinks Life, Ward, or Mana flasks automatically when your HP or mana drops below your chosen threshold.
+            Includes human-like delays so it never feels robotic.
           </p>
 
           <div class="card-tags">
@@ -245,7 +264,8 @@
           </div>
 
           <p class="card-desc" data-i18n="craftDesc">
-            Pick the mods you want, set a currency budget, and hit roll. Automatically stops on high-tier rolls so you never accidentally roll over something valuable.
+            Pick the mods you want, set a currency budget, and hit roll. Automatically stops on high-tier rolls so you
+            never accidentally roll over something valuable.
           </p>
 
           <div class="card-tags">
@@ -284,7 +304,8 @@
           </div>
 
           <p class="card-desc" data-i18n="sortDesc">
-            One click organizes your bags and stash tabs. Automatically fills empty slots based on your item category preferences without tedious dragging.
+            One click organizes your bags and stash tabs. Automatically fills empty slots based on your item category
+            preferences without tedious dragging.
           </p>
 
           <div class="card-tags">
@@ -293,6 +314,162 @@
             <span class="tag-badge" data-i18n="sortTag3">Stash Tab Packing</span>
           </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Access Plans Section -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="pricingSectionBadge">ACCESS PLANS</span>
+        <h2 class="section-title" data-i18n="pricingSectionTitle">Choose Your Access Plan</h2>
+        <p class="section-subtitle" data-i18n="pricingSectionSubtitle">
+          Instant access to all overlays, radar, auto-crafting, and updates.
+        </p>
+      </div>
+
+      <!-- Free Weekend & Giveaway Banner -->
+      <div class="pricing-community-banner">
+        <div class="pricing-community-content">
+          <div class="community-banner-tag" data-i18n="pricingCommunityBadge">COMMUNITY PERKS</div>
+          <h3 class="community-banner-heading" data-i18n="pricingCommunityTitle">Free Weekends &amp; Redeem Codes</h3>
+          <p class="community-banner-text" data-i18n="pricingCommunityDesc">
+            The developer frequently hosts free weekend access and drops code giveaways in our Discord community!
+          </p>
+        </div>
+        <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-discord-banner">
+          <img src="public/images/discord.svg" alt="Discord" class="discord-banner-icon">
+          <span data-i18n="pricingCommunityBtn">JOIN DISCORD FOR NEWS!</span>
+        </a>
+      </div>
+
+      <!-- Dynamic Plans Grid (Pre-rendered for offline/instant file:/// display) -->
+      <div class="pricing-grid" id="pricing-grid">
+        <!-- 3 Days -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-title-row">
+              <h3 class="plan-name">3 Days Access</h3>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">3</span>
+              <span class="plan-crypto">USDT</span>
+            </div>
+          </div>
+          <ul class="plan-perks">
+            <li><span class="perk-check">✓</span> <span>Full Map &amp; Minimap Radar</span></li>
+            <li><span class="perk-check">✓</span> <span>Auto-Flask &amp; Auto-Craft</span></li>
+            <li><span class="perk-check">✓</span> <span>PoB Passive Tree Overlay</span></li>
+            <li><span class="perk-check">✓</span> <span>Automatic Cloudflare Updates</span></li>
+          </ul>
+          <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-plan-action">
+            <span data-i18n="planBuyBtn">Get Access</span>
+            <span class="plan-btn-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- 5 Days -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-title-row">
+              <h3 class="plan-name">5 Days Access</h3>
+              <span class="plan-discount-badge">-20%</span>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">4</span>
+              <span class="plan-crypto">USDT</span>
+            </div>
+          </div>
+          <ul class="plan-perks">
+            <li><span class="perk-check">✓</span> <span>Full Map &amp; Minimap Radar</span></li>
+            <li><span class="perk-check">✓</span> <span>Auto-Flask &amp; Auto-Craft</span></li>
+            <li><span class="perk-check">✓</span> <span>PoB Passive Tree Overlay</span></li>
+            <li><span class="perk-check">✓</span> <span>Automatic Cloudflare Updates</span></li>
+          </ul>
+          <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-plan-action">
+            <span data-i18n="planBuyBtn">Get Access</span>
+            <span class="plan-btn-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- 12 Days -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-title-row">
+              <h3 class="plan-name">12 Days Access</h3>
+              <span class="plan-discount-badge">-42%</span>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">7</span>
+              <span class="plan-crypto">USDT</span>
+            </div>
+          </div>
+          <ul class="plan-perks">
+            <li><span class="perk-check">✓</span> <span>Full Map &amp; Minimap Radar</span></li>
+            <li><span class="perk-check">✓</span> <span>Auto-Flask &amp; Auto-Craft</span></li>
+            <li><span class="perk-check">✓</span> <span>PoB Passive Tree Overlay</span></li>
+            <li><span class="perk-check">✓</span> <span>Automatic Cloudflare Updates</span></li>
+          </ul>
+          <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-plan-action">
+            <span data-i18n="planBuyBtn">Get Access</span>
+            <span class="plan-btn-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- 24 Days -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-title-row">
+              <h3 class="plan-name">24 Days Access</h3>
+              <span class="plan-discount-badge">-54%</span>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">11</span>
+              <span class="plan-crypto">USDT</span>
+            </div>
+          </div>
+          <ul class="plan-perks">
+            <li><span class="perk-check">✓</span> <span>Full Map &amp; Minimap Radar</span></li>
+            <li><span class="perk-check">✓</span> <span>Auto-Flask &amp; Auto-Craft</span></li>
+            <li><span class="perk-check">✓</span> <span>PoB Passive Tree Overlay</span></li>
+            <li><span class="perk-check">✓</span> <span>Automatic Cloudflare Updates</span></li>
+          </ul>
+          <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-plan-action">
+            <span data-i18n="planBuyBtn">Get Access</span>
+            <span class="plan-btn-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- 30 Days (Highlight / Best Value) -->
+        <div class="pricing-card pricing-card-highlight">
+          <div class="plan-best-badge" data-i18n="planPopularBadge">BEST VALUE</div>
+          <div class="plan-header">
+            <div class="plan-title-row">
+              <h3 class="plan-name">30 Days Access (1 Month)</h3>
+              <span class="plan-discount-badge">-60%</span>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">12</span>
+              <span class="plan-crypto">USDT</span>
+            </div>
+          </div>
+          <ul class="plan-perks">
+            <li><span class="perk-check">✓</span> <span>Full Map &amp; Minimap Radar</span></li>
+            <li><span class="perk-check">✓</span> <span>Auto-Flask &amp; Auto-Craft</span></li>
+            <li><span class="perk-check">✓</span> <span>PoB Passive Tree Overlay</span></li>
+            <li><span class="perk-check">✓</span> <span>Automatic Cloudflare Updates</span></li>
+          </ul>
+          <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-plan-action">
+            <span data-i18n="planBuyBtn">Get Access</span>
+            <span class="plan-btn-arrow">→</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -321,7 +498,8 @@
         <div class="step-card">
           <div class="step-num">03</div>
           <h3 class="step-title" data-i18n="howStep3Title">3. Launch Companion</h3>
-          <p class="step-desc" data-i18n="howStep3Desc">Open PoE2 Companion. Overlays and radar connect automatically.</p>
+          <p class="step-desc" data-i18n="howStep3Desc">Open PoE2 Companion. Overlays and radar connect automatically.
+          </p>
         </div>
       </div>
     </div>
@@ -331,11 +509,13 @@
   <section class="cta-section">
     <div class="container">
       <h2 class="cta-title" data-i18n="ctaTitle">Ready to Level Up Your PoE2 Journey?</h2>
-      <p class="cta-subtitle" data-i18n="ctaSubtitle">Lightweight, safe, and built specifically for Path of Exile 2 players.</p>
-      
-      <a href="https://poe2.zonelyg.com/PoE2%20Companion_0.1.2_x64-setup.exe" class="btn-primary-lg app-download-link" id="cta-download">
+      <p class="cta-subtitle" data-i18n="ctaSubtitle">Lightweight, safe, and built specifically for Path of Exile 2
+        players.</p>
+
+      <a href="https://poe2update.zonelyg.com/PoE2%20Companion_0.1.6_x64-setup.exe"
+        class="btn-primary-lg app-download-link" id="cta-download">
         <span data-i18n="ctaDownloadBtn">Download PoE2 Companion</span>
-        <span class="btn-version-pill app-version-badge">v0.1.2</span>
+        <span class="btn-version-pill app-version-badge">v0.1.6</span>
       </a>
     </div>
   </section>
@@ -343,12 +523,18 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
+      <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="footer-discord-link">
+        <img src="public/images/discord.svg" alt="Discord" class="footer-discord-icon">
+        <span>PoE2 Companion Discord</span>
+      </a>
+
       <p class="footer-disclaimer" data-i18n="footerDisclaimer">
-        Path of Exile 2 is a registered trademark of Grinding Gear Games. PoE2 Companion is an independent third-party tool and is not affiliated with or endorsed by Grinding Gear Games.
+        Path of Exile 2 is a registered trademark of Grinding Gear Games. PoE2 Companion is an independent third-party
+        tool and is not affiliated with or endorsed by Grinding Gear Games.
       </p>
 
       <div class="footer-meta">
-        <span>PoE2 Companion <strong class="app-version-badge">v0.1.2</strong></span>
+        <span>PoE2 Companion <strong class="app-version-badge">v0.1.6</strong></span>
         <span>•</span>
         <span data-i18n="footerPlatform">Windows 64-bit</span>
       </div>
@@ -358,4 +544,5 @@
   <!-- Single Standard Script (Zero CORS issues on file:///) -->
   <script src="js/app.js"></script>
 </body>
+
 </html>

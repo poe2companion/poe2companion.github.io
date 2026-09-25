@@ -262,6 +262,41 @@ a {
   color: var(--poe2-gold-primary);
 }
 
+/* Discord Nav Button */
+.btn-nav-discord {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: linear-gradient(180deg, #1d1813 0%, #110e0b 100%);
+  border: 1px solid var(--poe2-border-strong);
+  border-top: 1px solid var(--poe2-border-highlight);
+  border-radius: var(--poe2-radius);
+  color: var(--poe2-text-bright);
+  font-family: var(--poe2-font-title);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 6px 12px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.6);
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.btn-nav-discord:hover {
+  background: linear-gradient(180deg, #282019 0%, #16120e 100%);
+  border-color: #5865f2;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(88, 101, 242, 0.4);
+}
+
+.nav-discord-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  display: block;
+}
+
 /* Compact Nav Button */
 .btn-nav-download {
   display: inline-flex;
@@ -401,6 +436,42 @@ a {
   background: rgba(30, 24, 18, 0.9);
   border-color: var(--poe2-border-highlight);
   color: var(--poe2-gold-primary);
+}
+
+/* Discord Hero CTA Button */
+.btn-discord-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(180deg, #201a14 0%, #13100c 100%);
+  border: 1px solid var(--poe2-border-strong);
+  border-top: 1px solid var(--poe2-border-highlight);
+  border-radius: var(--poe2-radius);
+  color: var(--poe2-text-bright);
+  font-family: var(--poe2-font-title);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 14px 22px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5), 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.btn-discord-hero:hover {
+  background: linear-gradient(180deg, #2c231b 0%, #18130e 100%);
+  border-color: #5865f2;
+  color: #ffffff;
+  box-shadow: 0 0 14px rgba(88, 101, 242, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.discord-hero-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  display: block;
 }
 
 .hero-meta {
@@ -732,6 +803,36 @@ a {
   text-align: center;
 }
 
+.footer-discord-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--poe2-gold-primary);
+  font-family: var(--poe2-font-title);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  padding: 8px 18px;
+  border: 1px solid var(--poe2-border-strong);
+  border-top: 1px solid var(--poe2-border-highlight);
+  border-radius: var(--poe2-radius);
+  background: rgba(22, 17, 13, 0.7);
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.footer-discord-link:hover {
+  border-color: #5865f2;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(88, 101, 242, 0.4);
+}
+
+.footer-discord-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  display: block;
+}
+
 .footer-disclaimer {
   max-width: 720px;
   line-height: 1.6;
@@ -747,12 +848,295 @@ a {
 }
 
 /* ==========================================================================
+   Access Plans / Pricing Section
+   ========================================================================== */
+.pricing-section {
+  padding: 80px 0;
+  background: 
+    radial-gradient(ellipse 60% 40% at 50% 20%, rgba(201, 169, 97, 0.05), transparent 70%),
+    linear-gradient(180deg, var(--poe2-bg-deep) 0%, rgba(18, 14, 11, 0.6) 50%, var(--poe2-bg-deep) 100%);
+  border-top: 1px solid var(--poe2-border-groove);
+  border-bottom: 1px solid var(--poe2-border-groove);
+}
+
+.pricing-community-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: 
+    linear-gradient(135deg, rgba(26, 21, 16, 0.95) 0%, rgba(18, 14, 11, 0.95) 100%);
+  border: 1px solid var(--poe2-border-strong);
+  border-top: 2px solid var(--poe2-gold-primary);
+  border-radius: var(--poe2-radius);
+  padding: 24px 28px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.community-banner-tag {
+  font-family: var(--poe2-font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  color: var(--poe2-gold-bright);
+  margin-bottom: 4px;
+}
+
+.community-banner-heading {
+  font-family: var(--poe2-font-title);
+  font-size: 1.15rem;
+  color: var(--poe2-text-bright);
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.community-banner-text {
+  font-size: 0.9rem;
+  color: var(--poe2-text-muted);
+  line-height: 1.4;
+}
+
+.btn-discord-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(180deg, #3a2d1f 0%, #1f1710 100%);
+  border: 1px solid var(--poe2-border-highlight);
+  border-top: 1px solid var(--poe2-gold-primary);
+  border-radius: var(--poe2-radius);
+  color: var(--poe2-gold-bright);
+  font-family: var(--poe2-font-title);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.7), 0 4px 14px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease;
+}
+
+.btn-discord-banner:hover {
+  background: linear-gradient(180deg, #4d3c2a 0%, #2b2016 100%);
+  border-color: var(--poe2-gold-bright);
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(201, 169, 97, 0.4);
+  transform: translateY(-2px);
+}
+
+.discord-banner-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.pricing-card {
+  position: relative;
+  background: var(--poe2-bg-card);
+  border: 1px solid var(--poe2-border-strong);
+  border-top: 1px solid var(--poe2-border-highlight);
+  border-radius: var(--poe2-radius);
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--poe2-gold-secondary);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.pricing-card-highlight {
+  border-color: var(--poe2-gold-primary);
+  border-top: 2px solid var(--poe2-gold-bright);
+  background: linear-gradient(180deg, rgba(28, 22, 17, 0.95) 0%, var(--poe2-bg-card) 100%);
+  box-shadow: 0 0 20px rgba(201, 169, 97, 0.15);
+}
+
+.pricing-card-highlight:hover {
+  border-color: var(--poe2-gold-bright);
+  box-shadow: 0 0 25px rgba(201, 169, 97, 0.25);
+}
+
+.plan-best-badge {
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--poe2-gold-bright);
+  color: #000000;
+  font-family: var(--poe2-font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 2px 10px;
+  border-radius: var(--poe2-radius);
+  white-space: nowrap;
+}
+
+.plan-header {
+  border-bottom: 1px solid var(--poe2-border-groove);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.plan-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.plan-name {
+  font-family: var(--poe2-font-title);
+  font-size: 0.95rem;
+  color: var(--poe2-text-bright);
+  letter-spacing: 0.04em;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.plan-discount-badge {
+  background: rgba(239, 83, 80, 0.15);
+  border: 1px solid #ef5350;
+  color: #ff8a80;
+  font-family: var(--poe2-font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: var(--poe2-radius);
+  white-space: nowrap;
+}
+
+.plan-price-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.plan-currency {
+  font-family: var(--poe2-font-mono);
+  font-size: 1.1rem;
+  color: var(--poe2-gold-primary);
+  font-weight: 600;
+}
+
+.plan-price {
+  font-family: var(--poe2-font-title);
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.plan-crypto {
+  font-family: var(--poe2-font-mono);
+  font-size: 0.75rem;
+  color: var(--poe2-text-muted);
+  letter-spacing: 0.05em;
+  margin-left: 4px;
+}
+
+.plan-perks {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.8rem;
+  color: var(--poe2-text-bright);
+}
+
+.plan-perks li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.4;
+}
+
+.perk-check {
+  color: var(--poe2-gold-primary);
+  font-weight: bold;
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+.btn-plan-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 10px 14px;
+  font-family: var(--poe2-font-title);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--poe2-gold-primary);
+  background: rgba(30, 24, 18, 0.8);
+  border: 1px solid var(--poe2-border-strong);
+  border-top: 1px solid var(--poe2-border-highlight);
+  border-radius: var(--poe2-radius);
+  text-decoration: none;
+  transition: all 0.15s ease;
+  margin-top: auto;
+}
+
+.btn-plan-action:hover {
+  background: var(--poe2-gold-primary);
+  color: #0a0807;
+  border-color: var(--poe2-gold-bright);
+  box-shadow: 0 0 14px rgba(201, 169, 97, 0.35);
+}
+
+.pricing-card-highlight .btn-plan-action {
+  background: linear-gradient(180deg, var(--poe2-gold-primary) 0%, #a08240 100%);
+  color: #0a0807;
+  border-color: var(--poe2-gold-bright);
+}
+
+.pricing-card-highlight .btn-plan-action:hover {
+  background: var(--poe2-gold-bright);
+  box-shadow: 0 0 16px rgba(255, 213, 79, 0.5);
+}
+
+.plan-btn-arrow {
+  transition: transform 0.15s ease;
+}
+
+.btn-plan-action:hover .plan-btn-arrow {
+  transform: translateX(3px);
+}
+
+/* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
+@media (max-width: 1100px) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 992px) {
   .automation-grid,
   .overlays-grid,
   .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pricing-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .hero-title {
@@ -770,6 +1154,11 @@ a {
   .hero-subtitle {
     font-size: 0.95rem;
   }
+  .pricing-community-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pricing-grid,
   .automation-grid,
   .overlays-grid,
   .steps-grid {
