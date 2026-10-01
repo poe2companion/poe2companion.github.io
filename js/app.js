@@ -22,7 +22,7 @@
       navDownload: 'Download',
 
       heroTitle: 'Your In-Game Companion for Path of Exile 2',
-      heroSubtitle: 'Price checker, waystone checker, build tracker, loot tracker, inventory search bar, sort suggestions, trade assistant, and more.',
+      heroSubtitle: 'Price checker, waystone checker, build tracker, loot tracker, inventory search bar, sort suggestions, trade assistant, and more. Use at your own risk. While built for convenience, third-party utilities may not comply with GGG Terms of Service.',
       heroDownloadBtn: 'Download for Windows',
       heroPlatform: 'Windows Only · Windows 10 / 11 · Auto-updates via Cloudflare',
       heroViewFeatures: 'Explore Features',
@@ -108,7 +108,7 @@
       navDownload: 'Tải về',
 
       heroTitle: 'Công Cụ Hỗ Trợ Chơi Path of Exile 2 Tối Ưu',
-      heroSubtitle: 'Tra cứu giá thị trường, kiểm tra waystone, theo dõi build, thống kê loot, thanh tìm kiếm túi đồ, gợi ý sắp xếp, hỗ trợ giao dịch và nhiều tính năng khác.',
+      heroSubtitle: 'Tra cứu giá thị trường, kiểm tra waystone, theo dõi build, thống kê loot, thanh tìm kiếm túi đồ, gợi ý sắp xếp, hỗ trợ giao dịch và nhiều tính năng khác. Sử dụng có trách nhiệm và tự chịu rủi ro. Dù được phát triển nhằm tối ưu trải nghiệm, các tiện ích bên thứ ba có thể không hoàn toàn tuân thủ điều khoản dịch vụ của GGG.',
       heroDownloadBtn: 'Tải về cho Windows',
       heroPlatform: 'Dành cho Windows · Windows 10 / 11 · Tự động cập nhật qua Cloudflare',
       heroViewFeatures: 'Xem tính năng',
@@ -194,7 +194,7 @@
       navDownload: '立即下载',
 
       heroTitle: '流亡黯道 2 全能游戏辅助工具',
-      heroSubtitle: '实时查价、异界地图词缀检查、BD 构建追踪、掉落统计、背包搜索栏、整理建议、交易助手等丰富功能。',
+      heroSubtitle: '实时查价、异界地图词缀检查、BD 构建追踪、掉落统计、背包搜索栏、整理建议、交易助手等丰富功能。请自行承担使用风险。虽然本工具旨在提供游戏便利，但第三方辅助工具可能未完全符合 GGG 服务条款。',
       heroDownloadBtn: '下载 Windows 版',
       heroPlatform: '仅限 Windows · 支持 Windows 10 / 11 · Cloudflare 高速自动更新',
       heroViewFeatures: '浏览功能',
@@ -280,7 +280,7 @@
       navDownload: '다운로드',
 
       heroTitle: '패스 오브 엑자일 2를 위한 최고의 동반자 도구',
-      heroSubtitle: '시세 검색, 지도(Waystone) 옵션 확인, 빌드 트래커, 전리품 기록, 인벤토리 검색창, 정렬 제안, 거래 도우미 등 다양한 편의 기능.',
+      heroSubtitle: '시세 검색, 지도(Waystone) 옵션 확인, 빌드 트래커, 전리품 기록, 인벤토리 검색창, 정렬 제안, 거래 도우미 등 다양한 편의 기능. 이용에 따른 위험은 사용자가 감수해야 합니다. 편의를 위해 제작되었으나, 서드파티 도구는 GGG 서비스 이용약관을 완전히 준수하지 않을 수 있습니다.',
       heroDownloadBtn: 'Windows용 다운로드',
       heroPlatform: 'Windows 전용 · Windows 10 / 11 지원 · Cloudflare 초고속 업데이트',
       heroViewFeatures: '기능 둘러보기',
@@ -366,7 +366,7 @@
       navDownload: 'Скачать',
 
       heroTitle: 'Ваш главный игровой помощник в Path of Exile 2',
-      heroSubtitle: 'Оценка цен, проверка карт (Waystone), трекер билда, учет лута, поиск по инвентарю, подсказки по сортировке, помощник в торговле и многое другое.',
+      heroSubtitle: 'Оценка цен, проверка карт (Waystone), трекер билда, учет лута, поиск по инвентарю, подсказки по сортировке, помощник в торговле и многое другое. Используйте на свой страх и риск. Несмотря на удобство, сторонние утилиты могут не полностью соответствовать условиям обслуживания GGG.',
       heroDownloadBtn: 'Скачать для Windows',
       heroPlatform: 'Только для Windows · Windows 10 / 11 · Автообновление через Cloudflare',
       heroViewFeatures: 'Все функции',
@@ -452,7 +452,7 @@
       navDownload: 'ดาวน์โหลด',
 
       heroTitle: 'โปรแกรมช่วยเล่น Path of Exile 2',
-      heroSubtitle: 'เช็คราคาตลาด, ตรวจสอบม็อด Waystone, ติดตามบิลด์, บันทึกไอเทมดรอป, ช่องค้นหากระเป๋า, แนะนำจัดของ, ตัวช่วยซื้อขาย และอื่นๆ',
+      heroSubtitle: 'เช็คราคาตลาด, ตรวจสอบม็อด Waystone, ติดตามบิลด์, บันทึกไอเทมดรอป, ช่องค้นหากระเป๋า, แนะนำจัดของ, ตัวช่วยซื้อขาย และอื่นๆ โปรดใช้งานโดยยอมรับความเสี่ยงด้วยตนเอง แม้ถูกสร้างขึ้นเพื่ออำนวยความสะดวก แต่โปรแกรมภายนอกอาจไม่สอดคล้องกับข้อกำหนดการใช้งานของ GGG',
       heroDownloadBtn: 'ดาวน์โหลดสำหรับ Windows',
       heroPlatform: 'เฉพาะ Windows · รองรับ Windows 10 / 11 · อัปเดตอัตโนมัติผ่าน Cloudflare',
       heroViewFeatures: 'ดูฟีเจอร์ทั้งหมด',
