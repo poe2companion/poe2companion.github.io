@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PoE2 Companion — Helpful Features to Enjoy Path of Exile 2</title>
+  <meta name="description"
+    content="A friendly companion for Path of Exile 2 packed with helpful features, campaign route guides, PoB passive tree overlay, and quality-of-life tools to help you enjoy the game.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Open Graph / Discord & Messenger Embeds -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PoE2 Companion — Helpful Features to Enjoy Path of Exile 2">
+  <meta property="og:description"
+    content="A friendly companion for Path of Exile 2 packed with helpful features, campaign route guides, PoB passive tree overlay, and quality-of-life tools to help you enjoy the game.">
+  <meta property="og:image" content="public/images/app-avatar.png">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PoE2 Companion — Helpful Features to Enjoy Path of Exile 2">
+  <meta name="twitter:description"
+    content="A friendly companion for Path of Exile 2 packed with helpful features, campaign route guides, PoB passive tree overlay, and quality-of-life tools to help you enjoy the game.">
+  <meta name="twitter:image" content="public/images/app-avatar.png">
+</head>
+
+<body id="top">
+
+  <!-- Navigation Bar -->
+  <nav class="site-nav">
+    <div class="container">
+      <a href="#top" class="nav-brand" aria-label="PoE2 Companion - Back to top">
+        <span class="nav-poe-emblem">◈</span>
+        <span class="nav-brand-text">PoE2 COMPANION</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#overlays" class="nav-link" data-i18n="navOverlays">Overlays</a>
+        <a href="#automation" class="nav-link" data-i18n="navAutomation">Automation</a>
+        <a href="#pricing" class="nav-link" data-i18n="navPricing">Plans</a>
+        <a href="#setup" class="nav-link" data-i18n="navHowItWorks">Setup</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Language Selector -->
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button type="button" class="lang-dropdown-btn" id="lang-dropdown-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Select Language">
+            <span class="lang-current">
+              <span class="lang-flag" id="lang-current-flag">🇺🇸</span>
+              <span class="lang-label" id="lang-current-label">English</span>
+            </span>
+            <svg class="lang-arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="lang-menu" id="lang-menu" role="listbox" aria-labelledby="lang-dropdown-btn">
+            <li class="lang-item active" role="option" data-value="en" aria-selected="true" tabindex="-1">
+              <span class="lang-item-left">
+                <span class="lang-item-flag">🇺🇸</span>
+                <span class="lang-item-name">English</span>
+              </span>
+              <span class="lang-item-check">✦</span>
+            </li>
+            <li class="lang-item" role="option" data-value="vi" aria-selected="false" tabindex="-1">
+              <span class="lang-item-left">
+                <span class="lang-item-flag">🇻🇳</span>
+                <span class="lang-item-name">Tiếng Việt</span>
+              </span>
+              <span class="lang-item-check">✦</span>
+            </li>
+            <li class="lang-item" role="option" data-value="zh" aria-selected="false" tabindex="-1">
+              <span class="lang-item-left">
+                <span class="lang-item-flag">🇨🇳</span>
+                <span class="lang-item-name">简体中文</span>
+              </span>
+              <span class="lang-item-check">✦</span>
+            </li>
+            <li class="lang-item" role="option" data-value="ko" aria-selected="false" tabindex="-1">
+              <span class="lang-item-left">
+                <span class="lang-item-flag">🇰🇷</span>
+                <span class="lang-item-name">한국어</span>
+              </span>
+              <span class="lang-item-check">✦</span>
+            </li>
+            <li class="lang-item" role="option" data-value="ru" aria-selected="false" tabindex="-1">
+              <span class="lang-item-left">
+                <span class="lang-item-flag">🇷🇺</span>
+                <span class="lang-item-name">Русский</span>
+              </span>
+              <span class="lang-item-check">✦</span>
+            </li>
+            <li class="lang-item" role="option" data-value="th" aria-selected="false" tabindex="-1">
+              <span class="lang-item-left">
+                <span class="lang-item-flag">🇹🇭</span>
+                <span class="lang-item-name">ไทย</span>
+              </span>
+              <span class="lang-item-check">✦</span>
+            </li>
+          </ul>
+          <!-- Fallback Native Select -->
+          <select id="lang-select" class="visually-hidden" aria-hidden="true" tabindex="-1">
+            <option value="en" selected>🇺🇸 English</option>
+            <option value="vi">🇻🇳 Tiếng Việt</option>
+            <option value="zh">🇨🇳 简体中文</option>
+            <option value="ko">🇰🇷 한국어</option>
+            <option value="ru">🇷🇺 Русский</option>
+            <option value="th">🇹🇭 ไทย</option>
+          </select>
+        </div>
+
+        <!-- Discord Community Link -->
+        <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-nav-discord"
+          title="Join Discord Community">
+          <img src="public/images/discord.svg" alt="Discord" class="nav-discord-icon">
+          <span>Discord</span>
+        </a>
+
+        <!-- Compact Download Link -->
+        <a href="https://poe2update.zonelyg.com/PoE2%20Companion_0.1.12_x64-setup.exe"
+          class="btn-nav-download app-download-link">
+          <span data-i18n="navDownload">Download</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container">
+      <a href="https://www.pathofexile.com/trade2/search/poe2/Forbidden%20Rites/H4sIAAAAAAAACqtWKi5JLCktVrKqVsovKMnMz1OyUkosS8zMSUzKSVWq1QHLFytZRVcrlVQWpIJk81KUdJTSMnNKUotAErG1sbUA2ikBQEcAAAA"
+        target="_blank" rel="noopener noreferrer" class="hero-logo-box poe2-trade-link"
+        title="Open PoE 2 Trade Market (Forbidden Rites)" aria-label="Open Path of Exile 2 Official Trade Market">
+        <img src="public/images/logo.png" alt="Path of Exile 2" class="hero-main-logo">
+      </a>
+
+      <h1 class="hero-title" data-i18n="heroTitle">
+        Your In-Game Companion for Path of Exile 2
+      </h1>
+
+      <p class="hero-subtitle" data-i18n="heroSubtitle">
+        Price checker, inventory sort suggestions, build tracker, loot tracker, and trade assistant.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="https://poe2update.zonelyg.com/PoE2%20Companion_0.1.12_x64-setup.exe"
+          class="btn-primary-lg app-download-link" id="hero-download">
+          <span data-i18n="heroDownloadBtn">Download for Windows</span>
+          <span class="btn-version-pill app-version-badge">v0.1.12</span>
+        </a>
+
+        <a href="#overlays" class="btn-secondary-lg">
+          <span data-i18n="heroViewFeatures">Explore Features</span>
+        </a>
+      </div>
+
+      <p class="hero-meta" data-i18n="heroPlatform">
+        Windows Only · Windows 10 / 11 · Auto-updates via Cloudflare
+      </p>
+
+      <!-- Hero Visual Showcase (Temporarily commented out)
+      <div class="hero-preview-wrapper">
+        <div class="hero-preview-frame">
+          <div class="video-loader" aria-label="Loading video preview">
+            <div class="video-loader-dots">
+              <span class="loader-emblem">◈</span>
+              <span class="loader-emblem">◈</span>
+              <span class="loader-emblem">◈</span>
+            </div>
+          </div>
+          <video class="hero-preview-video" poster="public/images/hero-preview.png" autoplay loop muted playsinline
+            preload="auto">
+            <source src="https://poe2update.zonelyg.com/videos/hero-preview.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      -->
+    </div>
+  </header>
+
+  <!-- In-Game Overlays Section -->
+  <section class="overlays-section" id="overlays">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="overlaySectionBadge">GAME OVERLAYS</span>
+        <h2 class="section-title" data-i18n="overlaySectionTitle">In-Game Overlays</h2>
+        <p class="section-subtitle" data-i18n="overlaySectionSubtitle">
+          Clean overlays that give you what you need without getting in the way.
+        </p>
+      </div>
+
+      <div class="overlays-grid">
+        <!-- Runeshape Price Check -->
+        <article class="overlay-feature-card">
+          <div class="card-preview-slot overlay-preview-slot">
+            <video class="card-preview-video" poster="public/images/feature-expedition-price-check.png" autoplay loop muted playsinline
+              preload="none">
+              <source src="https://poe2update.zonelyg.com/videos/feature-expedition-price-check.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h3 class="overlay-card-title" data-i18n="runeshapeTitle">Runeshape Price Check</h3>
+          <p class="overlay-card-desc" data-i18n="runeshapeDesc">
+            Automatically checks market prices whenever you open the Runeshape Combinations window.
+          </p>
+        </article>
+
+        <!-- Campaign -->
+        <article class="overlay-feature-card">
+          <div class="card-preview-slot overlay-preview-slot">
+            <video class="card-preview-video" poster="public/images/feature-leveling.png" autoplay loop muted
+              playsinline preload="none">
+              <source src="https://poe2update.zonelyg.com/videos/feature-campaign.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h3 class="overlay-card-title" data-i18n="campaignTitle">Campaign Route Guide</h3>
+          <p class="overlay-card-desc" data-i18n="campaignDesc">
+            Auto-detects your current zone and quest objectives. Shows the quickest route through the story acts so you
+            never get lost.
+          </p>
+        </article>
+
+        <!-- Tree -->
+        <article class="overlay-feature-card">
+          <div class="card-preview-slot overlay-preview-slot">
+            <video class="card-preview-video" poster="public/images/feature-builds.png" autoplay loop muted playsinline
+              preload="none">
+              <source src="https://poe2update.zonelyg.com/videos/feature-pob.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h3 class="overlay-card-title" data-i18n="treeTitle">PoB Build & Tree HUD</h3>
+          <p class="overlay-card-desc" data-i18n="treeDesc">
+            Import your build share code from Path of Building. Overlays your planned passive tree directly over the
+            game so you know what node to pick next.
+          </p>
+        </article>
+
+        <!-- Loot -->
+        <article class="overlay-feature-card">
+          <div class="card-preview-slot overlay-preview-slot">
+            <video class="card-preview-video" poster="public/images/feature-loot.png" autoplay loop muted playsinline
+              preload="none">
+              <source src="https://poe2update.zonelyg.com/videos/feature-loot.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h3 class="overlay-card-title" data-i18n="lootTitle">Loot & Net Worth Tracker</h3>
+          <p class="overlay-card-desc" data-i18n="lootDesc">
+            Tracks valuable drops and calculates your hourly currency rate in real time while you farm.
+          </p>
+        </article>
+
+        <!-- Inventory / Waystones -->
+        <article class="overlay-feature-card">
+          <div class="card-preview-slot overlay-preview-slot">
+            <video class="card-preview-video" poster="public/images/feature-waystone.png" autoplay loop muted
+              playsinline preload="none">
+              <source src="https://poe2update.zonelyg.com/videos/feature-waystone.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h3 class="overlay-card-title" data-i18n="waystoneTitle">Waystone Mod Checker</h3>
+          <p class="overlay-card-desc" data-i18n="waystoneDesc">
+            Warns you about dangerous map modifiers before you open the portal, saving you from reflect, no-regen, or
+            bricked maps.
+          </p>
+        </article>
+
+        <!-- Trade -->
+        <article class="overlay-feature-card">
+          <div class="card-preview-slot overlay-preview-slot">
+            <video class="card-preview-video" poster="public/images/feature-trade.png" autoplay loop muted playsinline
+              preload="none">
+              <source src="https://poe2update.zonelyg.com/videos/feature-trade.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h3 class="overlay-card-title" data-i18n="tradeTitle">Trade Whisper Helper</h3>
+          <p class="overlay-card-desc" data-i18n="tradeDesc">
+            Shows trade whisper alerts on your screen with 1-click buttons to invite, trade, or reply without typing
+            commands into chat.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Automation Spotlight Section -->
+  <section class="automation-section" id="automation">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="autoSectionBadge">HANDS-FREE UTILITIES</span>
+        <h2 class="section-title" data-i18n="autoSectionTitle">Simple Automation</h2>
+        <p class="section-subtitle" data-i18n="autoSectionSubtitle">
+          We've made some simple automations to help your journey easier, but please use them at your own risk. We will
+          never make auto bots or intrusive automation.
+        </p>
+      </div>
+
+      <div class="automation-grid">
+        <!-- 1. Auto-Flask (Temporarily hidden)
+        <article class="panel-card">
+          <div class="card-header">
+            <h3 class="card-title" data-i18n="flaskTitle">Auto-Flask</h3>
+          </div>
+
+          <div class="card-preview-slot">
+            <video class="card-preview-video" poster="public/images/feature-automation.png" autoplay loop muted
+              playsinline preload="none">
+              <source src="https://poe2update.zonelyg.com/videos/auto-flask.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <p class="card-desc" data-i18n="flaskDesc">
+            Drinks Life, Ward, or Mana flasks automatically when your HP or mana drops below your chosen threshold.
+            Includes human-like delays so it never feels robotic.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-badge" data-i18n="flaskTag1">Life & Ward</span>
+            <span class="tag-badge" data-i18n="flaskTag2">Mana Trigger</span>
+            <span class="tag-badge" data-i18n="flaskTag3">Human Timing Delays</span>
+          </div>
+        </article>
+        -->
+
+        <!-- 2. Auto-Crafting Engine -->
+        <article class="panel-card">
+          <div class="card-header">
+            <h3 class="card-title" data-i18n="craftTitle">Auto-Crafting Engine</h3>
+          </div>
+
+          <div class="card-preview-slot">
+            <video class="card-preview-video" poster="public/images/feature-automation.png" autoplay loop muted
+              playsinline preload="none">
+              <source src="https://poe2update.zonelyg.com/videos/auto-crafting.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <p class="card-desc" data-i18n="craftDesc">
+            Pick the mods you want, set a currency budget, and hit roll. Automatically stops on high-tier rolls so you
+            never accidentally roll over something valuable.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-badge" data-i18n="craftTag1">Target Mod Selection</span>
+            <span class="tag-badge" data-i18n="craftTag2">Valuable Roll Protection</span>
+            <span class="tag-badge" data-i18n="craftTag3">Budget Cap Limits</span>
+          </div>
+        </article>
+
+        <!-- 3. Auto-Sort & Stash Packing -->
+        <article class="panel-card">
+          <div class="card-header">
+            <h3 class="card-title" data-i18n="sortTitle">Auto-Sort & Stash Packing</h3>
+          </div>
+
+          <div class="card-preview-slot">
+            <video class="card-preview-video" poster="public/images/feature-inventory.png" autoplay loop muted
+              playsinline preload="none">
+              <source src="https://poe2update.zonelyg.com/videos/auto-sorting.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <p class="card-desc" data-i18n="sortDesc">
+            One click organizes your bags and stash tabs. Automatically fills empty slots based on your item category
+            preferences without tedious dragging.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-badge" data-i18n="sortTag1">1-Click Clean Bags</span>
+            <span class="tag-badge" data-i18n="sortTag2">Custom Priority Order</span>
+            <span class="tag-badge" data-i18n="sortTag3">Stash Tab Packing</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Access Plans Section -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="pricingSectionBadge">ACCESS PLANS</span>
+        <h2 class="section-title" data-i18n="pricingSectionTitle">Choose Your Access Plan</h2>
+        <p class="section-subtitle" data-i18n="pricingSectionSubtitle">
+          Instant access to all overlays, auto-crafting, and updates.
+        </p>
+      </div>
+
+      <!-- Free Weekend & Giveaway Banner -->
+      <div class="pricing-community-banner">
+        <div class="pricing-community-content">
+          <div class="community-banner-tag" data-i18n="pricingCommunityBadge">COMMUNITY PERKS</div>
+          <h3 class="community-banner-heading" data-i18n="pricingCommunityTitle">Free Weekends &amp; Redeem Codes</h3>
+          <p class="community-banner-text" data-i18n="pricingCommunityDesc">
+            The developer frequently hosts free weekend access and drops code giveaways in our Discord community!
+          </p>
+        </div>
+        <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-discord-banner">
+          <img src="public/images/discord.svg" alt="Discord" class="discord-banner-icon">
+          <span data-i18n="pricingCommunityBtn">JOIN DISCORD FOR NEWS!</span>
+        </a>
+      </div>
+
+      <!-- Dynamic Plans Container -->
+      <div class="pricing-plans-wrapper" id="pricing-plans-wrapper">
+        <div class="pricing-grid" id="pricing-grid">
+        <!-- 3 Days -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-title-row">
+              <h3 class="plan-name">3 Days Access</h3>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">3</span>
+              <span class="plan-crypto">USDT</span>
+            </div>
+          </div>
+          <ul class="plan-perks">
+            <li><span class="perk-check">✓</span> <span>Runeshape Price Check</span></li>
+            <li><span class="perk-check">✓</span> <span>Auto-Craft &amp; Stash Packing</span></li>
+            <li><span class="perk-check">✓</span> <span>PoB Passive Tree Overlay</span></li>
+            <li><span class="perk-check">✓</span> <span>Automatic Cloudflare Updates</span></li>
+          </ul>
+          <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-plan-action">
+            <span data-i18n="planBuyBtn">Get Access</span>
+            <span class="plan-btn-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- 5 Days -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-title-row">
+              <h3 class="plan-name">5 Days Access</h3>
+              <span class="plan-discount-badge">-20%</span>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">4</span>
+              <span class="plan-crypto">USDT</span>
+            </div>
+          </div>
+          <ul class="plan-perks">
+            <li><span class="perk-check">✓</span> <span>Runeshape Price Check</span></li>
+            <li><span class="perk-check">✓</span> <span>Auto-Craft &amp; Stash Packing</span></li>
+            <li><span class="perk-check">✓</span> <span>PoB Passive Tree Overlay</span></li>
+            <li><span class="perk-check">✓</span> <span>Automatic Cloudflare Updates</span></li>
+          </ul>
+          <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-plan-action">
+            <span data-i18n="planBuyBtn">Get Access</span>
+            <span class="plan-btn-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- 12 Days -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-title-row">
+              <h3 class="plan-name">12 Days Access</h3>
+              <span class="plan-discount-badge">-42%</span>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">7</span>
+              <span class="plan-crypto">USDT</span>
+            </div>
+          </div>
+          <ul class="plan-perks">
+            <li><span class="perk-check">✓</span> <span>Runeshape Price Check</span></li>
+            <li><span class="perk-check">✓</span> <span>Auto-Craft &amp; Stash Packing</span></li>
+            <li><span class="perk-check">✓</span> <span>PoB Passive Tree Overlay</span></li>
+            <li><span class="perk-check">✓</span> <span>Automatic Cloudflare Updates</span></li>
+          </ul>
+          <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-plan-action">
+            <span data-i18n="planBuyBtn">Get Access</span>
+            <span class="plan-btn-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- 24 Days -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-title-row">
+              <h3 class="plan-name">24 Days Access</h3>
+              <span class="plan-discount-badge">-54%</span>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">11</span>
+              <span class="plan-crypto">USDT</span>
+            </div>
+          </div>
+          <ul class="plan-perks">
+            <li><span class="perk-check">✓</span> <span>Runeshape Price Check</span></li>
+            <li><span class="perk-check">✓</span> <span>Auto-Craft &amp; Stash Packing</span></li>
+            <li><span class="perk-check">✓</span> <span>PoB Passive Tree Overlay</span></li>
+            <li><span class="perk-check">✓</span> <span>Automatic Cloudflare Updates</span></li>
+          </ul>
+          <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-plan-action">
+            <span data-i18n="planBuyBtn">Get Access</span>
+            <span class="plan-btn-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- 30 Days (Highlight / Best Value) -->
+        <div class="pricing-card pricing-card-highlight">
+          <div class="plan-best-badge" data-i18n="planPopularBadge">BEST VALUE</div>
+          <div class="plan-header">
+            <div class="plan-title-row">
+              <h3 class="plan-name">30 Days Access (1 Month)</h3>
+              <span class="plan-discount-badge">-60%</span>
+            </div>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price">12</span>
+              <span class="plan-crypto">USDT</span>
+            </div>
+          </div>
+          <ul class="plan-perks">
+            <li><span class="perk-check">✓</span> <span>Runeshape Price Check</span></li>
+            <li><span class="perk-check">✓</span> <span>Auto-Craft &amp; Stash Packing</span></li>
+            <li><span class="perk-check">✓</span> <span>PoB Passive Tree Overlay</span></li>
+            <li><span class="perk-check">✓</span> <span>Automatic Cloudflare Updates</span></li>
+          </ul>
+          <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-plan-action">
+            <span data-i18n="planBuyBtn">Get Access</span>
+            <span class="plan-btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Quick Setup Section -->
+  <section class="how-section" id="setup">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="howSectionBadge">QUICK START</span>
+        <h2 class="section-title" data-i18n="howSectionTitle">Up and Running in 3 Steps</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3 class="step-title" data-i18n="howStep1Title">1. Download & Install</h3>
+          <p class="step-desc" data-i18n="howStep1Desc">Download and run the installer from the button above.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3 class="step-title" data-i18n="howStep2Title">2. Start Path of Exile 2</h3>
+          <p class="step-desc" data-i18n="howStep2Desc">Launch Path of Exile 2 and load into your character.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3 class="step-title" data-i18n="howStep3Title">3. Launch Companion</h3>
+          <p class="step-desc" data-i18n="howStep3Desc">Open PoE2 Companion. Overlays connect automatically.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="cta-title" data-i18n="ctaTitle">Ready to Level Up Your PoE2 Journey?</h2>
+      <p class="cta-subtitle" data-i18n="ctaSubtitle">Lightweight, safe, and built specifically for Path of Exile 2
+        players.</p>
+
+      <a href="https://poe2update.zonelyg.com/PoE2%20Companion_0.1.12_x64-setup.exe"
+        class="btn-primary-lg app-download-link" id="cta-download">
+        <span data-i18n="ctaDownloadBtn">Download PoE2 Companion</span>
+        <span class="btn-version-pill app-version-badge">v0.1.12</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="footer-discord-link">
+        <img src="public/images/discord.svg" alt="Discord" class="footer-discord-icon">
+        <span>PoE2 Companion Discord</span>
+      </a>
+
+      <p class="footer-disclaimer" data-i18n="footerDisclaimer">
+        Path of Exile 2 is a registered trademark of Grinding Gear Games. PoE2 Companion is an independent third-party
+        tool and is not affiliated with or endorsed by Grinding Gear Games.
+      </p>
+
+      <div class="footer-meta">
+        <span>PoE2 Companion <strong class="app-version-badge">v0.1.12</strong></span>
+        <span>•</span>
+        <span data-i18n="footerPlatform">Windows 64-bit</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Single Standard Script (Zero CORS issues on file:///) -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
