@@ -16,7 +16,7 @@
   const translations = {
     en: {
       navAutomation: 'Automation',
-      navOverlays: 'Overlays',
+      navFeatures: 'Features',
       navPricing: 'Plans',
       navHowItWorks: 'Setup',
       navDownload: 'Download',
@@ -29,7 +29,7 @@
 
       pricingSectionBadge: 'ACCESS PLANS',
       pricingSectionTitle: 'Choose Your Access Plan',
-      pricingSectionSubtitle: 'Instant access to all overlays, auto-crafting, and updates.',
+      pricingSectionSubtitle: 'Instant access to all features, auto-crafting, and updates.',
       pricingCommunityBadge: 'COMMUNITY PERKS',
       pricingCommunityTitle: 'Free Weekends & Redeem Codes',
       pricingCommunityDesc: 'The developer frequently hosts free weekend access and drops code giveaways in our Discord community!',
@@ -61,9 +61,18 @@
       sortTag2: 'Custom Priority Order',
       sortTag3: 'Stash Tab Packing',
 
-      overlaySectionBadge: 'GAME OVERLAYS',
-      overlaySectionTitle: 'In-Game Overlays',
-      overlaySectionSubtitle: 'Clean overlays that give you what you need without getting in the way.',
+      featureSectionBadge: 'FEATURES',
+      featureSectionTitle: 'In-Game Features',
+      featureSectionSubtitle: 'Useful tools that give you what you need without getting in the way.',
+
+      mapOverlayTitle: 'Map Overlay',
+      mapOverlayDesc: 'Shows bosses, rare monsters, chests, exits, and waypoints on your map, with the quickest path to your objective.',
+
+      fpsTitle: 'More FPS',
+      fpsDesc: 'Turn off fog, shadows, weather, and heavy particles to boost FPS and clean up the screen in busy fights.',
+
+      priceCheckTitle: 'Price Check',
+      priceCheckDesc: 'Hover an item and press Ctrl+C to see its stats and current trade listings instantly.',
 
       runeshapeTitle: 'Runeshape Price Check',
       runeshapeDesc: 'Automatically checks market prices whenever you open the Runeshape Combinations window.',
@@ -102,7 +111,7 @@
 
     vi: {
       navAutomation: 'Tự động',
-      navOverlays: 'Giao diện HUD',
+      navFeatures: 'Tính năng',
       navPricing: 'Bảng giá',
       navHowItWorks: 'Cài đặt',
       navDownload: 'Tải về',
@@ -115,7 +124,7 @@
 
       pricingSectionBadge: 'GÓI TRUY CẬP',
       pricingSectionTitle: 'Lựa Chọn Gói Phù Hợp',
-      pricingSectionSubtitle: 'Truy cập đầy đủ toàn bộ giao diện phủ, tự craft đồ và cập nhật tự động.',
+      pricingSectionSubtitle: 'Truy cập đầy đủ toàn bộ tính năng, tự craft đồ và cập nhật tự động.',
       pricingCommunityBadge: 'ĐẶC QUYỀN CỘNG ĐỒNG',
       pricingCommunityTitle: 'Cuối Tuần Miễn Phí & Mã Kích Hoạt',
       pricingCommunityDesc: 'Nhà phát triển thường xuyên mở ngày chơi thử miễn phí và tặng mã kích hoạt quà tặng trong kênh Discord!',
@@ -147,9 +156,18 @@
       sortTag2: 'Ưu tiên theo loại đồ',
       sortTag3: 'Xếp hòm thông minh',
 
-      overlaySectionBadge: 'GIAO DIỆN PHỦ IN-GAME',
-      overlaySectionTitle: 'Giao Diện Phủ In-Game',
-      overlaySectionSubtitle: 'Các bảng hiển thị gọn gàng, cung cấp đúng thông tin bạn cần mà không che mắt.',
+      featureSectionBadge: 'TÍNH NĂNG',
+      featureSectionTitle: 'Tính Năng Trong Game',
+      featureSectionSubtitle: 'Các công cụ hữu ích, cung cấp đúng thông tin bạn cần mà không che mắt.',
+
+      mapOverlayTitle: 'Lớp Phủ Bản Đồ (Map Overlay)',
+      mapOverlayDesc: 'Hiển thị boss, quái hiếm, rương, lối ra và waypoint trên bản đồ, kèm đường đi ngắn nhất tới mục tiêu.',
+
+      fpsTitle: 'Tăng FPS',
+      fpsDesc: 'Tắt sương mù, bóng đổ, thời tiết và hiệu ứng hạt nặng để tăng FPS và giúp màn hình gọn gàng hơn khi đánh đông quái.',
+
+      priceCheckTitle: 'Check Giá',
+      priceCheckDesc: 'Rê chuột vào vật phẩm và nhấn Ctrl+C để xem ngay chỉ số và các món đang bán trên chợ trade.',
 
       runeshapeTitle: 'Tự Động Check Giá Runeshape',
       runeshapeDesc: 'Tự động kiểm tra giá thị trường ngay khi bạn mở bảng kết hợp Runeshape trong game.',
@@ -188,7 +206,7 @@
 
     zh: {
       navAutomation: '自动化',
-      navOverlays: '游戏覆盖',
+      navFeatures: '功能',
       navPricing: '价格与计划',
       navHowItWorks: '使用指南',
       navDownload: '立即下载',
@@ -201,7 +219,7 @@
 
       pricingSectionBadge: '访问计划',
       pricingSectionTitle: '选择适合你的计划',
-      pricingSectionSubtitle: '完整解锁全部游戏覆盖界面、自动打造及自动更新。',
+      pricingSectionSubtitle: '完整解锁全部功能、自动打造及自动更新。',
       pricingCommunityBadge: '社区福利',
       pricingCommunityTitle: '免费周末与礼包兑换码',
       pricingCommunityDesc: '作者定期在官方 Discord 社区举办免费体验周末并派发时长兑换码！',
@@ -233,9 +251,18 @@
       sortTag2: '自定义优先级',
       sortTag3: '仓库紧凑排列',
 
-      overlaySectionBadge: 'HUD 界面',
-      overlaySectionTitle: '游戏内悬浮界面',
-      overlaySectionSubtitle: '轻量简洁，提供关键情报而不遮挡战斗视野。',
+      featureSectionBadge: '核心功能',
+      featureSectionTitle: '游戏内功能',
+      featureSectionSubtitle: '实用工具，提供关键情报而不遮挡战斗视野。',
+
+      mapOverlayTitle: '地图覆盖',
+      mapOverlayDesc: '在地图上标出首领、稀有怪物、宝箱、出口与传送点，并显示前往目标的最短路线。',
+
+      fpsTitle: '提升帧数 (FPS)',
+      fpsDesc: '关闭雾效、阴影、天气与大量粒子特效，提升帧数，让激烈战斗画面更清爽。',
+
+      priceCheckTitle: '物品查价',
+      priceCheckDesc: '鼠标悬停在物品上并按 Ctrl+C，即可立即查看属性与当前交易市场挂单。',
 
       runeshapeTitle: '符文组合自动查价',
       runeshapeDesc: '在游戏内打开符文组合 (Runeshape Combinations) 界面时，自动查询并显示当前市场实时价格。',
@@ -274,7 +301,7 @@
 
     ko: {
       navAutomation: '자동화',
-      navOverlays: '게임 오버레이',
+      navFeatures: '기능',
       navPricing: '이용권 플랜',
       navHowItWorks: '설치 가이드',
       navDownload: '다운로드',
@@ -287,7 +314,7 @@
 
       pricingSectionBadge: '이용권 플랜',
       pricingSectionTitle: '나에게 맞는 플랜 선택',
-      pricingSectionSubtitle: '모든 인게임 오버레이, 자동 제작 및 최신 업데이트 지원.',
+      pricingSectionSubtitle: '모든 인게임 기능, 자동 제작 및 최신 업데이트 지원.',
       pricingCommunityBadge: '커뮤니티 혜택',
       pricingCommunityTitle: '주말 무료 체험 & 리딤 코드',
       pricingCommunityDesc: '개발자가 공식 Discord에서 주말 무료 이용 이벤트 및 이용권 리딤 코드를 수시로 배포합니다!',
@@ -319,9 +346,18 @@
       sortTag2: '카테고리별 우선순위',
       sortTag3: '보관함 자동 정렬',
 
-      overlaySectionBadge: 'HUD 오버레이',
-      overlaySectionTitle: '게임 내 오버레이',
-      overlaySectionSubtitle: '플레이를 방해하지 않고 필요한 정보만 깔끔하게 전달합니다.',
+      featureSectionBadge: '주요 기능',
+      featureSectionTitle: '게임 내 기능',
+      featureSectionSubtitle: '플레이를 방해하지 않고 필요한 정보만 깔끔하게 전달합니다.',
+
+      mapOverlayTitle: '맵 오버레이',
+      mapOverlayDesc: '보스, 희귀 몬스터, 상자, 출구, 웨이포인트를 지도에 표시하고 목표까지 가장 빠른 경로를 안내합니다.',
+
+      fpsTitle: 'FPS 향상',
+      fpsDesc: '안개, 그림자, 날씨, 과도한 파티클 효과를 꺼서 FPS를 높이고 복잡한 전투 화면을 깔끔하게 만듭니다.',
+
+      priceCheckTitle: '시세 확인',
+      priceCheckDesc: '아이템에 마우스를 올리고 Ctrl+C를 누르면 옵션과 현재 거래소 매물을 바로 확인할 수 있습니다.',
 
       runeshapeTitle: '룬 조합(Runeshape) 자동 시세 확인',
       runeshapeDesc: '게임 내에서 룬 조합(Runeshape Combinations) 창을 열면 자동으로 시장 시세를 확인하여 표시합니다.',
@@ -360,7 +396,7 @@
 
     ru: {
       navAutomation: 'Автоматизация',
-      navOverlays: 'Оверлеи',
+      navFeatures: 'Функции',
       navPricing: 'Тарифы',
       navHowItWorks: 'Установка',
       navDownload: 'Скачать',
@@ -373,7 +409,7 @@
 
       pricingSectionBadge: 'ПЛАНЫ ДОСТУПА',
       pricingSectionTitle: 'Выберите Тариф Доступа',
-      pricingSectionSubtitle: 'Полный доступ ко всем оверлеям, авто-крафту и автоматическим обновлениям.',
+      pricingSectionSubtitle: 'Полный доступ ко всем функциям, авто-крафту и автоматическим обновлениям.',
       pricingCommunityBadge: 'БОНУСЫ СООБЩЕСТВА',
       pricingCommunityTitle: 'Бесплатные Выходные и Промокоды',
       pricingCommunityDesc: 'Разработчик регулярно устраивает дни бесплатного доступа и раздает промокоды в Discord!',
@@ -405,9 +441,18 @@
       sortTag2: 'Приоритеты категорий',
       sortTag3: 'Умная укладка в сундук',
 
-      overlaySectionBadge: 'ИГРОВЫЕ ОВЕРЛЕИ',
-      overlaySectionTitle: 'Игровые Оверлеи',
-      overlaySectionSubtitle: 'Аккуратные панели, которые показывают главное и не закрывают обзор.',
+      featureSectionBadge: 'ФУНКЦИИ',
+      featureSectionTitle: 'Игровые Функции',
+      featureSectionSubtitle: 'Полезные инструменты, которые показывают главное и не закрывают обзор.',
+
+      mapOverlayTitle: 'Оверлей Карты',
+      mapOverlayDesc: 'Показывает боссов, редких монстров, сундуки, выходы и точки телепортации на карте, а также кратчайший путь к цели.',
+
+      fpsTitle: 'Больше FPS',
+      fpsDesc: 'Отключает туман, тени, погоду и тяжелые эффекты частиц, повышая FPS и убирая визуальный шум в напряженных боях.',
+
+      priceCheckTitle: 'Оценка Цен',
+      priceCheckDesc: 'Наведите курсор на предмет и нажмите Ctrl+C, чтобы сразу увидеть его свойства и актуальные лоты на торговой площадке.',
 
       runeshapeTitle: 'Авто-Оценка Комбинаций Рун (Runeshape)',
       runeshapeDesc: 'Автоматически проверяет актуальные рыночные цены при открытии окна комбинаций рун (Runeshape) в игре.',
@@ -446,7 +491,7 @@
 
     th: {
       navAutomation: 'ระบบอัตโนมัติ',
-      navOverlays: 'โอเวอร์เลย์',
+      navFeatures: 'ฟีเจอร์',
       navPricing: 'ราคา',
       navHowItWorks: 'วิธีติดตั้ง',
       navDownload: 'ดาวน์โหลด',
@@ -459,7 +504,7 @@
 
       pricingSectionBadge: 'แพ็กเกจใช้งาน',
       pricingSectionTitle: 'เลือกแพ็กเกจของคุณ',
-      pricingSectionSubtitle: 'เข้าถึงทุกโอเวอร์เลย์ ออโต้คราฟต์ และการอัปเดตใหม่ๆ ได้ทันที',
+      pricingSectionSubtitle: 'เข้าถึงทุกฟีเจอร์ ออโต้คราฟต์ และการอัปเดตใหม่ๆ ได้ทันที',
       pricingCommunityBadge: 'กิจกรรมคอมมูนิตี้',
       pricingCommunityTitle: 'เล่นฟรีสุดสัปดาห์ & แจกโค้ด',
       pricingCommunityDesc: 'ผู้พัฒนาเปิดให้เล่นฟรีช่วงวันหยุดสุดสัปดาห์บ่อยๆ และมีแจกโค้ดใน Discord อยู่เรื่อยๆ!',
@@ -491,9 +536,18 @@
       sortTag2: 'จัดเรียงตามหมวดหมู่',
       sortTag3: 'เก็บเข้าคลังเป็นระเบียบ',
 
-      overlaySectionBadge: 'โอเวอร์เลย์ในเกม',
-      overlaySectionTitle: 'โอเวอร์เลย์ในเกม',
-      overlaySectionSubtitle: 'หน้าต่างแสดงข้อมูลที่เรียบง่าย เห็นชัด และไม่บังสายตาเวลาเล่น',
+      featureSectionBadge: 'ฟีเจอร์',
+      featureSectionTitle: 'ฟีเจอร์ในเกม',
+      featureSectionSubtitle: 'เครื่องมือที่ใช้งานง่าย เห็นข้อมูลชัด และไม่บังสายตาเวลาเล่น',
+
+      mapOverlayTitle: 'โอเวอร์เลย์แผนที่',
+      mapOverlayDesc: 'แสดงบอส มอนสเตอร์แรร์ หีบ ทางออก และเวย์พอยต์บนแผนที่ พร้อมบอกเส้นทางที่เร็วที่สุดไปยังเป้าหมาย',
+
+      fpsTitle: 'เพิ่ม FPS',
+      fpsDesc: 'ปิดหมอก เงา สภาพอากาศ และเอฟเฟกต์อนุภาคหนักๆ เพื่อเพิ่ม FPS และให้จอสะอาดตาขึ้นตอนสู้มอนเยอะๆ',
+
+      priceCheckTitle: 'เช็คราคา',
+      priceCheckDesc: 'ชี้เมาส์ที่ไอเทมแล้วกด Ctrl+C เพื่อดูค่าสเตตัสและรายการขายในตลาดเทรดได้ทันที',
 
       runeshapeTitle: 'เช็คราคา รูนเชป (Runeshape)',
       runeshapeDesc: 'เช็คราคาตลาดให้อัตโนมัติทันทีที่เปิดหน้าต่างผสม รูนเชป ในเกม',
