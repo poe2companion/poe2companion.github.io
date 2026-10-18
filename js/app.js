@@ -31,9 +31,13 @@
       pricingSectionTitle: 'Choose Your Access Plan',
       pricingSectionSubtitle: 'Instant access to all features, auto-crafting, and updates.',
       pricingCommunityBadge: 'COMMUNITY PERKS',
-      pricingCommunityTitle: 'Free Weekends & Redeem Codes',
-      pricingCommunityDesc: 'The developer frequently hosts free weekend access and drops code giveaways in our Discord community!',
+      pricingCommunityTitle: 'Free Weekends & Community Events',
+      pricingCommunityDesc: 'The developer frequently hosts free weekend access and community giveaways in our Discord server!',
       pricingCommunityBtn: 'JOIN DISCORD FOR NEWS!',
+      plan30Days: '30 Days Access',
+      plan60Days: '60 Days Access',
+      plan120Days: '120 Days Access',
+      planAllAccess: 'All access to the tool',
       planPopularBadge: 'BEST VALUE',
       planBuyBtn: 'Get Access',
       freeUntil: 'Free Until',
@@ -126,9 +130,13 @@
       pricingSectionTitle: 'Lựa Chọn Gói Phù Hợp',
       pricingSectionSubtitle: 'Truy cập đầy đủ toàn bộ tính năng, tự craft đồ và cập nhật tự động.',
       pricingCommunityBadge: 'ĐẶC QUYỀN CỘNG ĐỒNG',
-      pricingCommunityTitle: 'Cuối Tuần Miễn Phí & Mã Kích Hoạt',
-      pricingCommunityDesc: 'Nhà phát triển thường xuyên mở ngày chơi thử miễn phí và tặng mã kích hoạt quà tặng trong kênh Discord!',
+      pricingCommunityTitle: 'Cuối Tuần Miễn Phí & Sự Kiện Cộng Đồng',
+      pricingCommunityDesc: 'Nhà phát triển thường xuyên mở ngày chơi thử miễn phí và tổ chức sự kiện tặng quà trong kênh Discord!',
       pricingCommunityBtn: 'THAM GIA DISCORD CẬP NHẬT TIN TỨC!',
+      plan30Days: 'Gói 30 Ngày',
+      plan60Days: 'Gói 60 Ngày',
+      plan120Days: 'Gói 120 Ngày',
+      planAllAccess: 'Mở khóa toàn bộ tính năng công cụ',
       planPopularBadge: 'TIẾT KIỆM NHẤT',
       planBuyBtn: 'Nhận Gói',
       freeUntil: 'Miễn Phí Đến',
@@ -221,9 +229,13 @@
       pricingSectionTitle: '选择适合你的计划',
       pricingSectionSubtitle: '完整解锁全部功能、自动打造及自动更新。',
       pricingCommunityBadge: '社区福利',
-      pricingCommunityTitle: '免费周末与礼包兑换码',
-      pricingCommunityDesc: '作者定期在官方 Discord 社区举办免费体验周末并派发时长兑换码！',
+      pricingCommunityTitle: '免费周末与社区福利活动',
+      pricingCommunityDesc: '作者定期在官方 Discord 社区举办免费体验周末与福利活动！',
       pricingCommunityBtn: '加入 DISCORD 获取最新动态！',
+      plan30Days: '30 天使用权',
+      plan60Days: '60 天使用权',
+      plan120Days: '120 天使用权',
+      planAllAccess: '解锁工具全部功能',
       planPopularBadge: '超值推荐',
       planBuyBtn: '获取使用权',
       freeUntil: '限时免费至',
@@ -316,9 +328,13 @@
       pricingSectionTitle: '나에게 맞는 플랜 선택',
       pricingSectionSubtitle: '모든 인게임 기능, 자동 제작 및 최신 업데이트 지원.',
       pricingCommunityBadge: '커뮤니티 혜택',
-      pricingCommunityTitle: '주말 무료 체험 & 리딤 코드',
-      pricingCommunityDesc: '개발자가 공식 Discord에서 주말 무료 이용 이벤트 및 이용권 리딤 코드를 수시로 배포합니다!',
+      pricingCommunityTitle: '주말 무료 체험 & 커뮤니티 이벤트',
+      pricingCommunityDesc: '개발자가 공식 Discord에서 주말 무료 이용 이벤트 및 다양한 혜택을 수시로 진행합니다!',
       pricingCommunityBtn: '최신 소식 확인하러 DISCORD 참여!',
+      plan30Days: '30일 이용권',
+      plan60Days: '60일 이용권',
+      plan120Days: '120일 이용권',
+      planAllAccess: '도구 전체 기능 이용 가능',
       planPopularBadge: '최고 가성비',
       planBuyBtn: '이용권 구매',
       freeUntil: '무료 이용 기한:',
@@ -411,9 +427,13 @@
       pricingSectionTitle: 'Выберите Тариф Доступа',
       pricingSectionSubtitle: 'Полный доступ ко всем функциям, авто-крафту и автоматическим обновлениям.',
       pricingCommunityBadge: 'БОНУСЫ СООБЩЕСТВА',
-      pricingCommunityTitle: 'Бесплатные Выходные и Промокоды',
-      pricingCommunityDesc: 'Разработчик регулярно устраивает дни бесплатного доступа и раздает промокоды в Discord!',
+      pricingCommunityTitle: 'Бесплатные Выходные и События',
+      pricingCommunityDesc: 'Разработчик регулярно устраивает дни бесплатного доступа и розыгрыши в Discord!',
       pricingCommunityBtn: 'НАШ DISCORD С НОВОСТЯМИ!',
+      plan30Days: 'Доступ на 30 Дней',
+      plan60Days: 'Доступ на 60 Дней',
+      plan120Days: 'Доступ на 120 Дней',
+      planAllAccess: 'Полный доступ ко всем функциям',
       planPopularBadge: 'ВЫГОДНЫЙ ВЫБОР',
       planBuyBtn: 'Получить Доступ',
       freeUntil: 'Бесплатно до',
@@ -506,9 +526,13 @@
       pricingSectionTitle: 'เลือกแพ็กเกจของคุณ',
       pricingSectionSubtitle: 'เข้าถึงทุกฟีเจอร์ ออโต้คราฟต์ และการอัปเดตใหม่ๆ ได้ทันที',
       pricingCommunityBadge: 'กิจกรรมคอมมูนิตี้',
-      pricingCommunityTitle: 'เล่นฟรีสุดสัปดาห์ & แจกโค้ด',
-      pricingCommunityDesc: 'ผู้พัฒนาเปิดให้เล่นฟรีช่วงวันหยุดสุดสัปดาห์บ่อยๆ และมีแจกโค้ดใน Discord อยู่เรื่อยๆ!',
+      pricingCommunityTitle: 'เล่นฟรีสุดสัปดาห์ & กิจกรรมคอมมูนิตี้',
+      pricingCommunityDesc: 'ผู้พัฒนาเปิดให้เล่นฟรีช่วงวันหยุดสุดสัปดาห์บ่อยๆ และมีกิจกรรมแจกรางวัลใน Discord อยู่เรื่อยๆ!',
       pricingCommunityBtn: 'เข้า DISCORD เพื่อรับข่าวสาร!',
+      plan30Days: 'ใช้งาน 30 วัน',
+      plan60Days: 'ใช้งาน 60 วัน',
+      plan120Days: 'ใช้งาน 120 วัน',
+      planAllAccess: 'เข้าถึงทุกฟีเจอร์ของโปรแกรม',
       planPopularBadge: 'คุ้มค่าที่สุด',
       planBuyBtn: 'ซื้อแพ็กเกจ',
       freeUntil: 'เปิดให้ใช้ฟรีถึง',
@@ -704,72 +728,12 @@
     });
   }
 
-  // Dynamic Pricing Plans from zonelyg.com/api/poe2companion/buy-plan
-  async function fetchPricingPlans() {
-    const API_URL = 'https://zonelyg.com/api/poe2companion/buy-plan';
-    const grid = document.getElementById('pricing-grid');
-    if (!grid) return;
-
-    try {
-      const res = await fetch(API_URL);
-      if (!res.ok) return;
-      const data = await res.json();
-      if (!data.success || !Array.isArray(data.plans) || data.plans.length === 0) return;
-
-      const dict = translations[currentLocale] || translations.en;
-      const popularBadgeText = dict.planPopularBadge || 'BEST VALUE';
-      const buyBtnText = dict.planBuyBtn || 'Get Access';
-
-      grid.innerHTML = data.plans.map(plan => {
-        const isBest = plan.id === '30_days' || plan.durationDays === 30;
-        const discountBadge = plan.discountPercent > 0 
-          ? `<span class="plan-discount-badge">-${plan.discountPercent}%</span>` 
-          : '';
-        const popularTag = isBest 
-          ? `<div class="plan-best-badge">${popularBadgeText}</div>` 
-          : '';
-
-        return `
-          <div class="pricing-card ${isBest ? 'pricing-card-highlight' : ''}">
-            ${popularTag}
-            <div class="plan-header">
-              <div class="plan-title-row">
-                <h3 class="plan-name">${plan.name}</h3>
-                ${discountBadge}
-              </div>
-              <div class="plan-price-wrap">
-                <span class="plan-currency">$</span>
-                <span class="plan-price">${plan.priceUsdt}</span>
-                <span class="plan-crypto">USDT</span>
-              </div>
-            </div>
-
-            <ul class="plan-perks">
-              <li><span class="perk-check">✓</span> <span>Runeshape Price Check</span></li>
-              <li><span class="perk-check">✓</span> <span>Auto-Craft &amp; Stash Packing</span></li>
-              <li><span class="perk-check">✓</span> <span>PoB Passive Tree Overlay</span></li>
-              <li><span class="perk-check">✓</span> <span>Automatic Cloudflare Updates</span></li>
-            </ul>
-
-            <a href="https://discord.gg/yBhYEVyRgh" target="_blank" rel="noopener noreferrer" class="btn-plan-action">
-              <span>${buyBtnText}</span>
-              <span class="plan-btn-arrow">→</span>
-            </a>
-          </div>
-        `;
-      }).join('');
-    } catch (e) {
-      // Retain fallback HTML cards
-    }
-  }
-
   // Free Event Overlay on Access Plans
   let freeEventTimerInterval = null;
   let activeFreeEventEndDate = null;
 
   async function checkFreeEvent() {
     const PRIMARY_CONFIG_URL = 'https://zonelyg.com/api/globals/poe2-companion-config?depth=2&draft=false&locale=en-US&trash=false';
-    const FALLBACK_CONFIG_URL = 'https://zonelyg.com/api/poe2companion/free-event';
 
     let config = null;
 
@@ -779,16 +743,7 @@
         config = await res.json();
       }
     } catch (_) {
-      // Primary fetch failed (e.g. CORS on file:///), try companion route
-    }
-
-    if (!config) {
-      try {
-        const fallbackRes = await fetch(FALLBACK_CONFIG_URL);
-        if (fallbackRes.ok) {
-          config = await fallbackRes.json();
-        }
-      } catch (_) {}
+      // Ignore network/CORS errors on file:///
     }
 
     if (!config || !config.freeEventEndDate) return;
@@ -932,7 +887,6 @@
       const val = item.getAttribute('data-value');
       if (val) {
         setLocale(val);
-        fetchPricingPlans();
         closeDropdown(true);
       }
     });
@@ -955,7 +909,6 @@
           const val = items[currentIndex].getAttribute('data-value');
           if (val) {
             setLocale(val);
-            fetchPricingPlans();
             closeDropdown(true);
           }
         }
@@ -993,14 +946,12 @@
 
       select.addEventListener('change', e => {
         setLocale(e.target.value);
-        fetchPricingPlans();
       });
     }
 
     initLanguageDropdown();
     applyTranslations();
     resolveLatestVersion();
-    fetchPricingPlans();
     checkFreeEvent();
 
     // Image fallback handling
