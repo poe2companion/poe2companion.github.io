@@ -78,8 +78,14 @@
       priceCheckTitle: 'Price Check',
       priceCheckDesc: 'Hover an item and press Ctrl+C to see its stats and current trade listings instantly.',
 
-      runeshapeTitle: 'Runeshape Price Check',
-      runeshapeDesc: 'Automatically checks market prices whenever you open the Runeshape Combinations window.',
+      economyTitle: 'Game Economy',
+      economyDesc: 'See the overall economy of the game with live currency rates, unique item prices, and market trends.',
+
+      runeshapeTitle: 'Expedition Price Check',
+      runeshapeDesc: 'Automatically checks market prices for Expedition monolith rewards and Runeshape combinations.',
+
+      ritualTitle: 'Ritual Price Check',
+      ritualDesc: 'Automatically shows live market prices on items inside the Ritual Favours window.',
 
       campaignTitle: 'Campaign Route Guide',
       campaignDesc: 'Auto-detects your current zone and quest objectives. Shows the quickest route through the story acts so you never get lost.',
@@ -177,8 +183,14 @@
       priceCheckTitle: 'Check Giá',
       priceCheckDesc: 'Rê chuột vào vật phẩm và nhấn Ctrl+C để xem ngay chỉ số và các món đang bán trên chợ trade.',
 
-      runeshapeTitle: 'Tự Động Check Giá Runeshape',
-      runeshapeDesc: 'Tự động kiểm tra giá thị trường ngay khi bạn mở bảng kết hợp Runeshape trong game.',
+      economyTitle: 'Thị Trường Trong Game',
+      economyDesc: 'Xem toàn cảnh thị trường trong game với tỷ giá tiền tệ, giá đồ Unique và biến động giá trực tiếp.',
+
+      runeshapeTitle: 'Check Giá Expedition',
+      runeshapeDesc: 'Tự động kiểm tra giá thị trường cho phần thưởng cột đá Expedition và bảng kết hợp Runeshape.',
+
+      ritualTitle: 'Check Giá Ritual',
+      ritualDesc: 'Tự động hiện giá thị trường trực tiếp trên từng vật phẩm trong bảng phần thưởng Ritual.',
 
       campaignTitle: 'Chỉ Đường Đi Cốt Truyện',
       campaignDesc: 'Tự nhận biết map và nhiệm vụ hiện tại. Chỉ đường ngắn nhất qua các Act để bạn lên cấp nhanh nhất mà không bị lạc.',
@@ -276,8 +288,14 @@
       priceCheckTitle: '物品查价',
       priceCheckDesc: '鼠标悬停在物品上并按 Ctrl+C，即可立即查看属性与当前交易市场挂单。',
 
-      runeshapeTitle: '符文组合自动查价',
-      runeshapeDesc: '在游戏内打开符文组合 (Runeshape Combinations) 界面时，自动查询并显示当前市场实时价格。',
+      economyTitle: '全服市场物价',
+      economyDesc: '查看游戏整体经济，掌握实时通货汇率、暗金装备价格与市场走势。',
+
+      runeshapeTitle: '先祖秘藏自动查价',
+      runeshapeDesc: '自动查询并显示先祖秘藏方尖碑奖励与符文组合 (Runeshape) 的实时市场价格。',
+
+      ritualTitle: '仪式恩赐自动查价',
+      ritualDesc: '在打开仪式恩赐 (Ritual Favours) 窗口时，自动在物品上显示实时市场价格。',
 
       campaignTitle: '剧情通关导航',
       campaignDesc: '自动侦测当前区域与任务目标，标注试炼与传送点，带你最快速度跑完剧情章节。',
@@ -375,8 +393,14 @@
       priceCheckTitle: '시세 확인',
       priceCheckDesc: '아이템에 마우스를 올리고 Ctrl+C를 누르면 옵션과 현재 거래소 매물을 바로 확인할 수 있습니다.',
 
-      runeshapeTitle: '룬 조합(Runeshape) 자동 시세 확인',
-      runeshapeDesc: '게임 내에서 룬 조합(Runeshape Combinations) 창을 열면 자동으로 시장 시세를 확인하여 표시합니다.',
+      economyTitle: '게임 전체 시세',
+      economyDesc: '실시간 화폐 교환 비율, 고유 아이템 가격, 시세 흐름 등 게임 전체 경제를 한눈에 확인합니다.',
+
+      runeshapeTitle: '탐험(Expedition) 자동 시세 확인',
+      runeshapeDesc: '탐험 성소 보상과 룬 조합(Runeshape) 창의 시장 시세를 자동으로 확인하여 표시합니다.',
+
+      ritualTitle: '의식(Ritual) 자동 시세 확인',
+      ritualDesc: '의식 은총(Ritual Favours) 창을 열면 각 보상 아이템에 실시간 시장 시세를 바로 표시합니다.',
 
       campaignTitle: '캠페인 길잡이',
       campaignDesc: '현재 지역과 퀘스트를 자동으로 감지하여 액트를 가장 빠르게 돌파할 수 있는 경로를 안내합니다.',
@@ -474,8 +498,14 @@
       priceCheckTitle: 'Оценка Цен',
       priceCheckDesc: 'Наведите курсор на предмет и нажмите Ctrl+C, чтобы сразу увидеть его свойства и актуальные лоты на торговой площадке.',
 
-      runeshapeTitle: 'Авто-Оценка Комбинаций Рун (Runeshape)',
-      runeshapeDesc: 'Автоматически проверяет актуальные рыночные цены при открытии окна комбинаций рун (Runeshape) в игре.',
+      economyTitle: 'Экономика Игры',
+      economyDesc: 'Следите за всей экономикой игры: курсы валют, цены уникальных предметов и рыночные тренды.',
+
+      runeshapeTitle: 'Авто-Оценка Экспедиции',
+      runeshapeDesc: 'Автоматически проверяет рыночные цены наград монолитов Экспедиции и комбинаций рун (Runeshape).',
+
+      ritualTitle: 'Авто-Оценка Ритуала',
+      ritualDesc: 'Автоматически показывает актуальные рыночные цены прямо на предметах в окне наград Ритуала.',
 
       campaignTitle: 'Гайд по Сюжетной Кампании',
       campaignDesc: 'Автоматически определяет локацию и квесты. Ведет по самому быстрому маршруту через акты, отмечая испытания и порталы.',
@@ -573,8 +603,14 @@
       priceCheckTitle: 'เช็คราคา',
       priceCheckDesc: 'ชี้เมาส์ที่ไอเทมแล้วกด Ctrl+C เพื่อดูค่าสเตตัสและรายการขายในตลาดเทรดได้ทันที',
 
-      runeshapeTitle: 'เช็คราคา รูนเชป (Runeshape)',
-      runeshapeDesc: 'เช็คราคาตลาดให้อัตโนมัติทันทีที่เปิดหน้าต่างผสม รูนเชป ในเกม',
+      economyTitle: 'ภาพรวมเศรษฐกิจในเกม',
+      economyDesc: 'ดูภาพรวมตลาดในเกม เช็คเรทแลกเปลี่ยนเงินตรา ราคาไอเทมยูนิค และแนวโน้มราคาแบบเรียลไทม์',
+
+      runeshapeTitle: 'เช็คราคา Expedition',
+      runeshapeDesc: 'เช็คราคาตลาดให้อัตโนมัติสำหรับของรางวัลเสาหิน Expedition และหน้าต่างผสม Runeshape',
+
+      ritualTitle: 'เช็คราคาของรางวัล Ritual',
+      ritualDesc: 'แสดงราคาตลาดแบบเรียลไทม์บนไอเทมในหน้าต่างของรางวัล Ritual ให้อัตโนมัติ',
 
       campaignTitle: 'นำทางเนื้อเรื่องและเควสต์',
       campaignDesc: 'ตรวจจับแมพและเควสต์ปัจจุบันให้อัตโนมัติ บอกเส้นทางที่เร็วที่สุดในแต่ละ Act ไม่ต้องกลัวหลง',
