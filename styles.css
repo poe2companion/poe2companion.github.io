@@ -752,12 +752,6 @@ a {
   background: radial-gradient(circle at 50% 30%, rgba(201, 169, 97, 0.03) 0%, transparent 60%);
 }
 
-.automation-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
 /* Standard Gothic Card (.panel-card matching DESIGN_SYSTEM.md) */
 .panel-card {
   background: var(--poe2-bg-surface);
@@ -806,7 +800,6 @@ a {
   font-size: 0.88rem;
   line-height: 1.55;
   color: var(--poe2-text-bright);
-  margin-bottom: 20px;
   flex-grow: 1;
 }
 
@@ -869,24 +862,6 @@ a {
   color: var(--poe2-green-active);
   font-family: var(--poe2-font-mono);
   font-size: 0.7rem;
-}
-
-.card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: auto;
-}
-
-.tag-badge {
-  font-family: var(--poe2-font-mono);
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--poe2-gold-secondary);
-  background: rgba(140, 115, 75, 0.08);
-  border: 1px solid var(--poe2-border-subtle);
-  border-radius: var(--poe2-radius);
-  padding: 2px 8px;
 }
 
 /* ==========================================================================
@@ -1450,7 +1425,6 @@ a {
    ========================================================================== */
 
 @media (max-width: 992px) {
-  .automation-grid,
   .overlays-grid,
   .steps-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1481,7 +1455,6 @@ a {
     align-items: flex-start;
   }
   .pricing-grid,
-  .automation-grid,
   .overlays-grid,
   .steps-grid {
     grid-template-columns: 1fr;
