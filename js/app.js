@@ -49,21 +49,12 @@
 
       flaskTitle: 'Auto-Flask',
       flaskDesc: 'Drinks Life, Ward, or Mana flasks automatically when your HP or mana drops below your chosen threshold. Includes human-like delays so it never feels robotic.',
-      flaskTag1: 'Life & Ward',
-      flaskTag2: 'Mana Trigger',
-      flaskTag3: 'Human Timing Delays',
 
       craftTitle: 'Auto-Crafting Engine',
       craftDesc: 'Pick the mods you want, set a currency budget, and hit roll. Automatically stops on high-tier rolls so you never accidentally roll over something valuable.',
-      craftTag1: 'Target Mod Selection',
-      craftTag2: 'Valuable Roll Protection',
-      craftTag3: 'Budget Cap Limits',
 
       sortTitle: 'Auto-Sort & Stash Packing',
       sortDesc: 'One click organizes your bags and stash tabs. Automatically fills empty slots based on your item category preferences without tedious dragging.',
-      sortTag1: '1-Click Clean Bags',
-      sortTag2: 'Custom Priority Order',
-      sortTag3: 'Stash Tab Packing',
 
       featureSectionBadge: 'FEATURES',
       featureSectionTitle: 'In-Game Features',
@@ -154,21 +145,12 @@
 
       flaskTitle: 'Tự Động Bấm Bình (Auto-Flask)',
       flaskDesc: 'Tự động uống bình Máu, Ward hoặc Mana khi tụt dưới mức quy định. Có độ trễ ngẫu nhiên tự nhiên như người chơi bấm thật.',
-      flaskTag1: 'Máu & Ward',
-      flaskTag2: 'Kích hoạt Mana',
-      flaskTag3: 'Độ trễ ngẫu nhiên',
 
       craftTitle: 'Tự Động Roll Đồ (Auto-Craft)',
       craftDesc: 'Chọn dòng chỉ số bạn cần, đặt giới hạn tiền và bắt đầu roll. Tự dừng lại nếu ra đồ ngon có nhiều dòng T1 để bạn không roll đè mất đồ xịn.',
-      craftTag1: 'Chọn dòng cần tìm',
-      craftTag2: 'Bảo vệ dòng giá trị',
-      craftTag3: 'Giới hạn số lượng tiền',
 
       sortTitle: 'Tự Sắp Xếp Hòm & Túi Đồ',
       sortDesc: 'Một nút bấm để gom gọn túi đồ và hòm chứa. Tự động lấp các ô trống theo thứ tự ưu tiên mà không cần kéo thả tay từng món.',
-      sortTag1: '1-click dọn gọn túi',
-      sortTag2: 'Ưu tiên theo loại đồ',
-      sortTag3: 'Xếp hòm thông minh',
 
       featureSectionBadge: 'TÍNH NĂNG',
       featureSectionTitle: 'Tính Năng Trong Game',
@@ -259,21 +241,12 @@
 
       flaskTitle: '自动喝药 (Auto-Flask)',
       flaskDesc: '当生命值、护佑或魔力低于设定阈值时自动使用药水。内置拟人随机延迟，操作自然。',
-      flaskTag1: '生命与护佑',
-      flaskTag2: '魔力触发',
-      flaskTag3: '拟人延迟',
 
       craftTitle: '自动洗装备 (Auto-Craft)',
       craftDesc: '设定所需词条与通货预算一键自动洗。命中多条高阶 T1 词条自动停止，防止洗掉极品属性。',
-      craftTag1: '目标词条筛选',
-      craftTag2: '极品词条保护',
-      craftTag3: '通货上限保护',
 
       sortTitle: '一键背包与仓库整理',
       sortDesc: '一键整理杂乱的背包和仓库页。根据分类优先级自动紧凑填满空格，免去手动拖拽。',
-      sortTag1: '一键背包整理',
-      sortTag2: '自定义优先级',
-      sortTag3: '仓库紧凑排列',
 
       featureSectionBadge: '核心功能',
       featureSectionTitle: '游戏内功能',
@@ -364,21 +337,12 @@
 
       flaskTitle: '자동 물약 (Auto-Flask)',
       flaskDesc: '생명력, 보호막 또는 마나가 설정한 수치 이하로 떨어지면 자동으로 물약을 사용합니다. 자연스러운 딜레이가 적용되어 있습니다.',
-      flaskTag1: '생명력 & 보호막',
-      flaskTag2: '마나 트리거',
-      flaskTag3: '자연스러운 딜레이',
 
       craftTitle: '자동 제작 (Auto-Craft)',
       craftDesc: '원하는 옵션과 예산을 설정하고 시작하세요. 높은 티어의 유효 옵션이 나오면 자동으로 멈춰 중요한 아이템을 날리는 일을 막아줍니다.',
-      craftTag1: '목표 옵션 지정',
-      craftTag2: '고티어 옵션 보호',
-      craftTag3: '화폐 예산 제한',
 
       sortTitle: '인벤토리 및 보관함 자동 정리',
       sortDesc: '클릭 한 번으로 흩어진 아이템을 카테고리 우선순위에 맞춰 자동으로 깔끔하게 정리합니다.',
-      sortTag1: '1클릭 인벤토리 정리',
-      sortTag2: '카테고리별 우선순위',
-      sortTag3: '보관함 자동 정렬',
 
       featureSectionBadge: '주요 기능',
       featureSectionTitle: '게임 내 기능',
@@ -469,21 +433,12 @@
 
       flaskTitle: 'Авто-Флаконы (Auto-Flask)',
       flaskDesc: 'Автоматически пьет флаконы здоровья, защиты или маны, когда их уровень падает ниже заданного. С естественными задержками кликов.',
-      flaskTag1: 'Здоровье и Защита',
-      flaskTag2: 'Триггер Маны',
-      flaskTag3: 'Плавные задержки',
 
       craftTitle: 'Авто-Крафт (Auto-Craft)',
       craftDesc: 'Выберите нужные свойства, задайте лимит валюты и запустите ролл. Автоматически останавливается при выпадении редких Т1 свойств, чтобы вы случайно не сбросили ценную вещь.',
-      craftTag1: 'Выбор нужных модов',
-      craftTag2: 'Защита ценных свойств',
-      craftTag3: 'Ограничение бюджета',
 
       sortTitle: 'Авто-Сортировка Инвентаря и Сундука',
       sortDesc: 'В один клик наводит порядок в инвентаре и вкладках сундука, заполняя пустые слоты по вашим приоритетам.',
-      sortTag1: '1 клик для порядка',
-      sortTag2: 'Приоритеты категорий',
-      sortTag3: 'Умная укладка в сундук',
 
       featureSectionBadge: 'ФУНКЦИИ',
       featureSectionTitle: 'Игровые Функции',
@@ -574,21 +529,12 @@
 
       flaskTitle: 'กดยาอัตโนมัติ (Auto-Flask)',
       flaskDesc: 'กดยาเลือด ยาวอร์ด หรือยามานาให้อัตโนมัติเมื่อเลือดหรือมานาลดต่ำกว่าที่ตั้งไว้ มีหน่วงเวลาแบบธรรมชาติเหมือนคนกดจริง',
-      flaskTag1: 'เลือด & วอร์ด',
-      flaskTag2: 'กดตามมานา',
-      flaskTag3: 'หน่วงเวลาเหมือนคนกด',
 
       craftTitle: 'ระบบช่วยคราฟต์ของ (Auto-Craft)',
       craftDesc: 'เลือกออปชันที่ต้องการ ตั้งงบเงินคราฟต์ แล้วกดสุ่มได้เลย ระบบจะหยุดให้อัตโนมัติเมื่อได้ออปชันเทียร์สูง ป้องกันการสุ่มทับของมีค่า',
-      craftTag1: 'เลือกออปชันที่ต้องการ',
-      craftTag2: 'กันสุ่มทับของดี',
-      craftTag3: 'จำกัดงบเงินคราฟต์',
 
       sortTitle: 'จัดกระเป๋าและคลังอัตโนมัติ',
       sortDesc: 'คลิกเดียวจัดของในตัวและในคลังให้เรียบร้อย เติมช่องว่างตามหมวดหมู่ไอเทม ไม่ต้องคอยลากวางทีละชิ้น',
-      sortTag1: 'คลิกเดียวจัดกระเป๋า',
-      sortTag2: 'จัดเรียงตามหมวดหมู่',
-      sortTag3: 'เก็บเข้าคลังเป็นระเบียบ',
 
       featureSectionBadge: 'ฟีเจอร์',
       featureSectionTitle: 'ฟีเจอร์ในเกม',
